@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Vue Automotive - Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="CSS\contact.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <meta name = 'viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body class="contact__body">
+	<img src="Images/VueLogT1.png" class="vue-logo__top">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <hr>
+  <nav class="contact__navDiv">
+    <ul class="nav justify-content-center">
+    <li class="nav-item__pagenav">
+      <a class="nav-link__pagenav" href="index.html">HOME</a>
+    </li>
+    <li class="nav-item__pagenav">
+      <a class="nav-link__pagenav" href="about.html">ABOUT US</a>
+    </li>
+    <li class="nav-item__pagenav">
+      <a class="nav-link__pagenav" href="products.html">PRODUCTS</a>
+    </li>
+    <li class="nav-item__pagenav">
+      <a class="nav-link__pagenav" href="#">CONTACT US</a>
+    </li>
+  </ul>
+  </nav>
+<br>
+<hr>
+<h2 class="contact__header">Contact Us</h2>
+<br>
+<!-- Division storing methods of contact -->
+<div class="contact__contactFlex">
+<p class="contact__contactText"><b>Address: </b><br>Vue Automotive GmbH<br>112 Weizenweg<br>71563 Affalterbach<br>Germany</p>
+<br>
+<p class="contact__contactText"><b>Tel: </b><br>0049 07 144 0</p>
+<br>
+<p class="contact__contactText"><b>E-mail: </b><br>info@vueautomotive.de<br><a class="maillink" href="mailto: info@vueautomotive.de">Email us</a></p>
+<br>
+<p class="contact__contactText"><b>What is on your mind?</b><br>
+<!-- Form used for directly submitting a message -->
+<form class="form1" action="" method="get">
+   <label for="fname">First Name: </label>
+   <input type="text" id="fname" name="firstname" placeholder="Enter your first name">
+   <br><br>
+   <label for="lname">Last Name: </label>
+   <input type="text" id="lname" name="lastname" placeholder="Enter your last name">
+   <br><br>
+   <label for="gender"> Gender: </label>
+   <input type="radio" name="gender" value="Male"> Male
+   <input type="radio" name="gender" value="Female"> Female
+   <input type="radio" name="gender" value="Other"> Other
+   <br><br>
+   <label for="usermail">Email: </label>
+   <input type="email" name="usermail" id="usermail">
+   <br><br>
+   <label for="nationality">Nationality: </label>
+   <input type="text" id="fname" name="nat">
+   <br><br>
+   <label for="add">Address: </label>
+   <input type="text" name="add" id="add">
+   <br><br>
+   <label for="msg">What is on your mind?<br><br></label>
+   <br>
+   <textarea type="text" name="msg" id="msg" style="width: 1120px; height: 300px;"></textarea><br><br>
+   <input type="submit" name="Submit" value="Submit">
+</form>
+</p>
+<br><br>
+</div>
+</body>
+</html>

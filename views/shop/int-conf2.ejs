@@ -1,0 +1,56 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="../../public/css/user/vehicle_config_IntExt.css">
+
+</head>
+
+<body onload="changeHandler()">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+<%- include('../includes/nav.ejs') %>
+<br>
+<hr>
+
+<div class="config__dynamicImage-div" id="carIntImageDiv">
+    <img class="config__dynamicImage" src="" id="carIntImage" crossorigin="anonymous">
+      <h3 class="config__dynamicPrice-div"> Price: <span id="dynamic_price"> </span>$</h3>
+</div>
+
+<div class="config__options-div">
+
+  <h2 style="font-family: Ubuntu, Arial, Helvetica, sans-serif"> Seat </h2>
+    <div class="config__options-grid">
+      <a class="config__option-link" href="javascript:void(0)" onclick="setBlackAlcantaraFlag()">
+      <div class="config__option-option">
+        <img src="<%= seatImage1 %>" class="config__option-image" id="blackAlcantara" type="radio">
+        <p><%= seatColor1 %><br><strong>$<%= seatPrice1 %></strong></p>
+      </div>
+      </a> 
+      <a class="config__option-link" href="javascript:void(0)" onclick="setRedAlcantaraFlag()">
+      <div class="config__option-option">
+        <img src="<%= seatImage2 %>" class="config__option-image" id="redAlcantara" type="radio">
+        <p><%= seatColor2 %><br><strong>$<%= seatPrice2 %></strong></p>
+      </div>
+      </a>
+    </div>
+
+    <h2 style="font-family: Ubuntu, Arial, Helvetica, sans-serif"> Trim </h2>
+    <div class="config__options-grid">
+      <a class="config__option-link" href="javascript:void(0)" onclick="setAluTrimFlag()">
+      <div class="config__option-option">
+        <img src="<%= trimImage1 %>" class="config__option-image" id="aluTrim" type="radio">
+        <p><%= trimN1 %><br><strong>$<%= trimP1 %></strong></p>
+      </div>
+      </a>
+      <a class="config__option-link" href="javascript:void(0)" onclick="setSpecTrimFlag()">
+      <div class="config__option-option">
+        <img src="<%= trimImage2 %>" class="config__option-image" id="specTrim" type="radio">
+        <p><%= trimN2 %><br><strong>$<%= trimP2 %></strong></p> 
+      </div>
+      </a>
+    </div>
+    <a href="/options2/<%= product.id %>" class="config__next" id="nextButton" onclick="intImageExporter()">
+      NEXT: OPTIONS
+    </a> 
+</div>
+
+<script type="text/javascript" src="../../public/js/Aura_Sport_Config_Interior.js" async></script>
+<%- include('../includes/end.ejs') %>

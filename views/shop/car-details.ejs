@@ -1,0 +1,158 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="../../public/css/user/vehicle.css">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>    
+<%- include('../includes/nav.ejs') %>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="carouselImage">
+          <img src="<%= carousel1 %>" class="d-block w-100" alt="Car">
+        </div>
+        <div class="carousel-item" id="carouselImage">
+          <img src="<%= carousel2 %>" class="d-block w-100" alt="Car">
+        </div>
+        <div class="carousel-item" id="carouselImage">
+          <img src="<%= carousel3 %>" class="d-block w-100" alt="Car">
+        </div>
+        <div class="carousel-item" id="carouselImage">
+          <img src="<%= carousel4 %>" class="d-block w-100" alt="Car">
+        </div>
+        <div class="carousel-item" id="carouselImage">
+          <img src="<%= carousel5 %>" class="d-block w-100" alt="Car">
+        </div>
+       <div class="carousel-item" id="carouselImage">
+          <img src="<%= carousel6 %>" class="d-block w-100" alt="Car">
+        </div>
+        <div class="carousel-item" id="carouselImage">
+          <img src="<%= carousel7 %>" class="d-block w-100" alt="Car">
+        </div>
+        <div class="carousel-item" id="carouselImage">
+          <img src="<%= carousel8 %>" class="d-block w-100" alt="Car">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    <br> 
+
+    <h2 class="vehicle__header">VUE AUTOMOTIVE  -   <%=pageHeader%></h2>
+    <br>
+    <!-- <a href="/ext/<%= product.id %>" class="vehicle__infoBox-configLink"> 
+      CONFIGURE THIS CAR
+    </a> -->
+    <!-- Product information snippets -->
+    <div class="vehicle__flexBox">
+       <div class="vehicle__infoBox-left">
+        <img src="<%= imageUrl1 %>" class="vehicle__image-left">
+        <h1 class="vehicle__slogan"> <%=vehicleHeader1%></h1>
+        <hr> 
+        <br>  
+        <p class="vehicle__description"> <%=vehicleText1%></p>
+        </div>
+    <div class="vehicle__infoBox-right">
+          <img src="<%= imageUrl2 %>" class="vehicle__image-right">
+          <h1 class="vehicle__slogan"> <%=vehicleHeader2%> </h1>
+          <hr> 
+          <br>  
+          <p class="vehicle__description"><%= vehicleText2 %> </p>
+    </div>
+    <div class="vehicle__infoBox-left">
+          <img src="<%= imageUrl3 %>" class="vehicle__image-left">
+          <h1 class="vehicle__slogan"> <%=vehicleHeader3%> </h1>
+          <hr> 
+          <br>  
+          <p class="vehicle__description"> <%= vehicleText3 %></p>
+    </div>
+    <div class="vehicle__infoBox-center">
+            <h3 class="vehicle__header"> Body Specifications </h3>
+            <hr>
+            <ul class="ul-center">
+            <li class="li-center"> Bodystyle: <%= bodyStyle %> </li>
+            <li class="li-center"> Length/Width/WheelBase (in meters): <%= lengthWidthWheelBase %> </li>
+            <li class="li-center"> Chassis type: <%= chassisType %> </li>
+            <li class="li-center"> Chassis material: <%= chassisMaterial %> </li>
+            <li class="li-center"> Engine placement: <%= enginePlacement %> </li>
+            <li class="li-center"> Suspension: <%= suspension %> </li>
+            <li class="li-center"> Cargo space (in liters): <%= cargoSpace %>L </li>
+            </ul>
+    </div>
+    <div class="vehicle__infoBox-center">
+      <h3 class="vehicle__header"> Trim Specifications </h3>
+      <hr>
+      <table class="tablecenter">
+          <tr class="trcenter">
+            <th class="thcenter"> Attribute </th>
+            <th class="thcenter"> <%= attribute1 %> </th>
+            <th class="thcenter"> <%= attribute2 %> </th>
+          </tr>
+          <tr class="trcenter">
+            <td class="tdcenter1"> Engine </td>
+            <td class="tdcenter1"> <%= engine1 %> </td>
+            <td class="tdcenter1"> <%= engine2 %> </td>
+          </tr>
+          <tr class="trcenter">
+            <td class="tdcenter2"> Engine Material </td>
+            <td class="tdcenter2"> <%= engineMaterial1 %> </td>
+            <td class="tdcenter2"> <%= engineMaterial2 %> </td>
+          </tr>
+          <tr class="trcenter">
+            <td class="tdcenter1"> Horsepower </td>
+            <td class="tdcenter1"> <%= horsePower1 %></td>
+            <td class="tdcenter1"> <%= horsePower2 %> </td>
+          </tr>
+          <tr class="trcenter">
+            <td class="tdcenter2"> Torque </td>
+            <td class="tdcenter2"> <%= torque1 %> </td>
+            <td class="tdcenter2"> <%= torque2 %> </td>
+          </tr>
+          <tr class="trcenter">
+            <td class="tdcenter1"> Acceleration (0-60 mph) </td>
+            <td class="tdcenter1"> <%= accel1 %> </td>
+            <td class="tdcenter1"> <%= accel2 %> </td>
+          </tr>
+          <tr class="trcenter">
+            <td class="tdcenter2"> Fuel Consumption </td>
+            <td class="tdcenter2"> <%= fuelCons1 %> </td>
+            <td class="tdcenter2"> <%= fuelCons2 %> </td>
+          </tr>
+          <tr class="trcenter">
+            <td class="tdcenter1"> Top Speed </td>
+            <td class="tdcenter1"> <%= topSpeed1 %></td>
+            <td class="tdcenter1"> <%= topSpeed2 %> </td>
+          </tr>
+          <tr class="trcenter">
+            <td class="tdcenter2"> Transmission </td>
+            <td class="tdcenter2"> <%= transmission1 %> </td>
+            <td class="tdcenter2"> <%= transmission2 %> </td>
+          </tr>
+          <tr class="trcenter">
+            <td class="tdcenter1"> Weight </td>
+            <td class="tdcenter1"> <%= weight1 %> </td>
+            <td class="tdcenter1"> <%= weight2 %> </td>
+          </tr>
+          <tr class="trcenter">
+            <td class="tdcenter2"> Tyres (Front/Rear) </td>
+            <td class="tdcenter2"> <%= tyres1 %> </td>
+            <td class="tdcenter2"> <%= tyres2 %> </td>
+          </tr>
+          <tr class="trcenter">
+            <td class="tdcenter1"> Driving Aids </td>
+            <td class="tdcenter1"> <%= drivingAid11 %> <br><%= drivingAid12 %><br><%= drivingAid13 %></td>
+            <td class="tdcenter1"> <%= drivingAid21 %><br><%= drivingAid22 %><br><%= drivingAid23 %></td>
+          </tr>
+      </table>
+    </div>
+    <a href="/trim/<%= product.id %>" class="vehicle__infoBox-configLink"> 
+      CONFIGURE YOUR <%= product.title %>
+    </a>
+  </div>
+  <%- include('../includes/end.ejs') %>

@@ -1,0 +1,84 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="../../public/css/user/vehicle_config_IntExt.css">
+
+</head>
+
+<body>  
+<%- include('../includes/nav.ejs') %>
+
+<div class="config__dynamicImage-div" id="carExtImageDiv">
+    <img class="config__dynamicImage" src="" id="carExtImage" crossorigin="anonymous">
+      <h3 class="config__dynamicPrice-div"> Price: <span id="dynamic_price"> </span>$</h3>
+</div>
+
+<div class="config__options-div">
+
+  <h2 style="font-family: Ubuntu, Arial, Helvetica, sans-serif"> Color </h2>
+    <div class="config__options-grid">
+      <a class="config__option-link" href="javascript:void(0)" onclick="setArdentBlackFlag()">
+      <div class="config__option-option">
+        <img src="<%= product.imageColor11 %>" class="config__option-image" id="ardentBlack" type="radio">
+        <p><%= carColor11 %><br><strong>$<%= colorPrice11 %></strong></p>
+      </div>
+      </a>
+      <a class="config__option-link" href="javascript:void(0)" onclick="setExcellenceMauveFlag()">
+      <div class="config__option-option">
+        <img src="<%= imageColor21 %>" class="config__option-image" id="excellenceMauve" type="radio">
+        <p><%= carColor21 %><br><strong>$<%= colorPrice21 %></strong></p>
+      </div>
+      </a>
+      <a class="config__option-link" href="javascript:void(0)" onclick="setOzelaisFlag()">
+        <div class="config__option-option">
+          <img src="<%= imageColor31 %>" class="config__option-image" id="ozelais" type="radio">
+          <p><%= carColor31 %><br><strong>$<%= colorPrice31 %></strong></p>
+        </div>
+        </a>
+        <a class="config__option-link" href="javascript:void(0)" onclick="setChampagneMystFlag()">
+          <div class="config__option-option">
+            <img src="<%= imageColor41 %>" class="config__option-image" id="champagneMyst" type="radio">
+            <p><%= carColor41 %><br><strong>$<%= colorPrice41 %></strong></p>
+          </div>
+          </a>
+    </div>
+ 
+    <h2 style="font-family: Ubuntu, Arial, Helvetica, sans-serif"> Rim </h2>
+    <div class="config__options-grid">
+      <a class="config__option-link" href="javascript:void(0)" onclick="setSmallRimFlag()">
+      <div class="config__option-option">
+        <img src="<%= imageRim11 %>" class="config__option-image" id="smallRim" type="radio">
+        <p><%= colorRim11 %><br><strong>$<%= rimPrice11 %></strong></p>
+      </div>
+      </a>
+      <a class="config__option-link" href="javascript:void(0)" onclick="setLargeRimFlag()">
+      <div class="config__option-option">
+        <img src="<%= imageRim21 %>" class="config__option-image" id="largeRim" type="radio">
+        <p><%= colorRim21 %><br><strong>$<%= rimPrice21 %></strong></p>
+      </div>
+      </a>
+    </div>
+
+    <h2 style="font-family: Ubuntu, Arial, Helvetica, sans-serif"> Sunroof </h2>
+    <div class="config__options-grid">
+      <a class="config__option-link" href="javascript:void(0)" onclick="setNoRoofFlag()">
+      <div class="config__option-option">
+        <img src="<%= imageRoof11 %>" class="config__option-image" id="noRoof" type="radio">
+        <p><%=roofType11%> Deletion<br><strong>$0</strong></strong></p>
+      </div>
+      </a>
+      <a class="config__option-link" href="javascript:void(0)" onclick="setSunRoofFlag()">
+      <div class="config__option-option">
+        <img src="<%= imageRoof21 %>" class="config__option-image" id="sunRoof" type="radio">
+        <p><%=roofType11%><br><strong>$<%= roofPrice11 %></strong></p>
+      </div>
+      </a>
+    </div>
+    <br>
+  <a href="/int1/<%= product.id %>" class="config__next" id="nextButton" onclick="extImageExporter()">
+    NEXT: INTERIOR
+  </a>
+  <br>
+  <br>
+</div>
+</div>
+<script type="text/javascript" src="../../public/js/Aura_Luxe_Config_Exterior.js" async></script>
+<%- include('../includes/end.ejs') %>

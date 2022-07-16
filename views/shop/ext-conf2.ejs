@@ -1,0 +1,91 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="../../public/css/user/vehicle_config_IntExt.css">
+
+</head>
+
+<body>  
+<%- include('../includes/nav.ejs') %>
+
+
+
+<div class="config__dynamicImage-div" id="carExtImageDiv">
+    <img class="config__dynamicImage" src="" id="carExtImage" crossorigin="anonymous">
+      <h3 class="config__dynamicPrice-div"> Price: <span id="dynamic_price"></span>$</h3>
+</div>
+  
+<div class="config__options-div">
+
+  <h2 style="font-family: Ubuntu, Arial, Helvetica, sans-serif"> Color </h2>
+    <div class="config__options-grid">
+      <a class="config__option-link" href="javascript:void(0)" onclick="setFlashBlueFlag()">
+      <div class="config__option-option">
+        <img src="<%= product.imageColor1 %>" class="config__option-image" id="flashBlue" type="radio">
+        <p><%= carColor1 %><br><strong>$<%= colorPrice1 %></strong></p>
+      </div>
+      </a>
+      <a class="config__option-link" href="javascript:void(0)" onclick="setEurosRedFlag()">
+      <div class="config__option-option">
+        <img src="<%= imageColor2 %>" class="config__option-image" id="eurosRed" type="radio">
+        <p><%= carColor2 %><br><strong>$<%= colorPrice2 %></strong></p>
+      </div>
+      </a>
+      <a class="config__option-link" href="javascript:void(0)" onclick="setArdentBlackFlag()">
+        <div class="config__option-option">
+          <img src="<%= imageColor3 %>" class="config__option-image" id="ardentBlack" type="radio">
+          <p><%= carColor3 %><br><strong>$<%= colorPrice3 %></strong></p>
+        </div>
+        </a>
+        <a class="config__option-link" href="javascript:void(0)" onclick="setAltaWhiteFlag()">
+          <div class="config__option-option">
+            <img src="<%= imageColor4 %>" class="config__option-image" id="altaWhite" type="radio">
+            <p><%= carColor4 %><br><strong>$<%= colorPrice4 %></strong></p>
+          </div>
+          </a>
+    </div>
+
+    <h2 style="font-family: Ubuntu, Arial, Helvetica, sans-serif"> Rim </h2>
+    <div class="config__options-grid">
+      <a class="config__option-link" href="javascript:void(0)" onclick="setWhiteRimFlag()">
+      <div class="config__option-option">
+        <img src="<%= imageRim1 %>" class="config__option-image" id="whiteRim" type="radio">
+        <p><%= colorRim1 %><br><strong>$<%= rimPrice1 %></strong></p>
+      </div>
+      </a>
+      <a class="config__option-link" href="javascript:void(0)" onclick="setBlackRimFlag()">
+      <div class="config__option-option">
+        <img src="<%= imageRim2 %>" class="config__option-image" id="blackRim" type="radio">
+        <p><%= colorRim2 %><br><strong>$<%= rimPrice2 %></strong></p>
+      </div>
+      </a>
+    </div>
+
+    <h2 style="font-family: Ubuntu, Arial, Helvetica, sans-serif"> Sunroof </h2>
+    <div class="config__options-grid">
+      <a class="config__option-link" href="javascript:void(0)" onclick="setNoRoofFlag()">
+      <div class="config__option-option">
+        <img src="<%= imageRoof1 %>" class="config__option-image" id="noRoof" type="radio">
+        <p><%=roofType%> Deletion<br><strong>$0</strong></strong></p>
+      </div>
+      </a>
+      <a class="config__option-link" href="javascript:void(0)" onclick="setSunRoofFlag()">
+      <div class="config__option-option">
+        <img src="<%= imageRoof2 %>" class="config__option-image" id="sunRoof" type="radio">
+        <p><%=roofType%><br><strong>$<%= roofPrice %></strong></p>
+      </div>
+      </a> 
+    </div>
+    <br>
+  <a href="/int2/<%= product.id %>" class="config__next" id="nextButton" onclick="extImageExporter()">
+    NEXT: INTERIOR
+  </a>
+  <br>
+  <br>
+
+</div>
+</div>
+
+
+<script type="text/javascript" src="../../public/js/Aura_Sport_Config_Exterior.js" async>
+</script>
+
+<%- include('../includes/end.ejs') %>

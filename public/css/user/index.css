@@ -1,0 +1,145 @@
+/*TOP ITEMS*/
+/*The navigation items on the About Us and Contact Us page are different due to styling preferences*/
+.vue-logo__top{
+  display: block; /*takes out full width*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.nav__navBox{
+  margin-top: 20px;
+  margin-bottom: 3px;
+  background-color: white;
+  border-width: 1px 0px 1px 0px;
+  border-style: solid none solid none;
+  border-color: dimgray;
+  background-color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+}
+
+.nav-link__pagenav:link{
+  color: dimgray;
+  font-family: Ubuntu;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-top: 50px;
+
+}
+
+.nav-link__pagenav:visited, .nav-link__pagenav:active{
+  color: dimgray;
+  font-family: Ubuntu;
+  text-decoration: none;
+}
+
+.nav-link__pagenav:hover{
+  color: dimgray;
+  font-family: Ubuntu;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@keyframes index__imageFadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+  
+}
+
+.index__welcomeImageDiv{
+  background-image: url("https://scontent.fbey15-1.fna.fbcdn.net/v/t39.30808-6/286878667_5164357530317926_5845503418273784093_n.jpg?stp=dst-jpg_p960x960&_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=T2oyIze1hbcAX9bFXAh&_nc_ht=scontent.fbey15-1.fna&oh=00_AT_qgj1twNUvtktxi2_J7dV6OrJkWOesWDF5TCf5DXcurw&oe=62C77EBC");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1519px;
+  height: 745px;
+  animation-name: index__imageFadeIn;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+.index__startExploring:link, .index__startExploring:active, .index__startExploring:visited{
+  background-image: linear-gradient(to right, #CDCDCD, #9F9F9F) !important;
+  position: relative !important;
+  top: 650px !important;
+  left: 52px !important;
+  width: 350px !important;
+  text-align: center !important;
+  font-size: 30px !important;
+  font-family: Ubuntu !important;
+  /* outline-style: solid !important; */
+  outline-width: 3px !important;
+  outline-color: white !important;
+  border-style: solid !important;
+  border-color: dimgray !important;
+  box-shadow: 1px 1px 1px 1px #fff inset !important;
+  border-width: 2px !important;
+  color: white !important;
+  text-shadow: 2px white !important;
+  border-radius: 50px 50px 50px 50px !important;
+  text-decoration: none !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+
+.index__startExploring:hover{
+  background-image: linear-gradient(to right, #CDCDCD, #9F9F9F) !important;
+  position: relative !important;
+  top: 650px !important;
+  left: 52px !important;
+  width: 350px !important;
+  text-align: center !important;
+  font-weight: bold !important;
+  font-size: 30px !important;
+  font-family: Ubuntu !important;
+  /* outline-style: solid !important; */
+  box-shadow: 1px 1px 1px 1px #fff inset !important;
+  outline-width: 3px !important;
+  outline-color: white !important;
+  border-style: solid !important;
+  border-color: dimgray !important;
+  border-width: 3.5px !important;
+  color: white !important;
+  text-shadow: 2px white !important;
+  border-radius: 50px 50px 50px 50px !important;
+  text-decoration: none !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+
+
+.index__welcomeTextDiv{
+  background-color:   white;
+  text-align:   center;
+  margin-top: 10px;
+}
+
+.index__welcomeText{
+  font-family: Ubuntu;
+  color: dimgray;
+  font-weight: bolder;
+}
+
+.index__introPar{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Ubuntu;
+  color: black ;
+}
+
+.index__copyrightFooter{
+  text-align: center;
+  background-color: lightgray;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.index__copyrightText{
+  font-size: 12px;
+  font-family: Ubuntu;
+  margin: auto auto auto auto;
+
+}

@@ -1,0 +1,126 @@
+.vue-logo__top{
+  display: block; /*takes out full width*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.about__navDiv{
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-link__pagenav:link{
+  color: dimgray;
+  font-family: Ubuntu;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-top: 50px;
+
+}
+
+.nav-link__pagenav:visited{
+  color: dimgray;
+  font-family: Ubuntu;
+  text-decoration: none;
+}
+
+.nav-link__pagenav:active{
+  color: red;
+  font-family: Ubuntu;
+  text-decoration: none;
+}
+
+.nav-link__pagenav:hover{
+  color: dimgray;
+  font-family: Ubuntu;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav2{
+  height: 0%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 21.5%;
+  margin-bottom: 0%;
+}
+
+.about__body{
+ background-image: url("https://scontent.fbey15-1.fna.fbcdn.net/v/t39.30808-6/289022009_5190732244347121_6778685444818654543_n.jpg?stp=dst-jpg_p960x960&_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=xcLZzrvPWucAX8JDelR&tn=ndeSL4T7tMYXuGFR&_nc_ht=scontent.fbey15-1.fna&oh=00_AT88lmjwzAUeKyksaW40Eya_jpWTCLwJjnwC8PgHbVaGeQ&oe=62C6073B");
+}
+
+.about__flexBox{
+  display: flex;
+  flex-direction:   column; /*flex items stacked on top of each other*/
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.about__infoBox{
+  border-style: solid solid solid solid;
+  /* border-width: 30px 30px 30px 30px; */
+  border-radius: 50px 50px 50px 50px;
+  border-color: dimgrey dimgrey dimgrey dimgrey;
+  background-color:   white;
+  text-align:   left;
+  flex-basis:   auto;
+  margin-bottom:  20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.about__infoHeader{
+  border-style: none  none none none;
+  background-color:   white;
+  text-align:   left;
+  flex-basis:   auto;
+  margin-bottom:  5px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+
+.about__infoText{
+  font-family: Ubuntu;
+  color: #666666;
+  margin-left: 0px;
+  padding-top: 10px;
+}
+
+.about__conclusionBox{
+  border-style: none  none none none;
+  text-align:   center;
+  flex-basis:   auto;
+  margin-bottom:  20px;
+  padding-left: 20px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.about__conclusionHeader{
+  font-family: Ubuntu;
+  color: white;
+  margin-left: 0px;
+  padding-top: 0px;
+  font-weight: bolder;
+}
+
+.about__disclaimer{
+  border-style: none  none none none;
+  background-color:   white;
+  text-align:   left;
+  flex-basis:   auto;
+  margin-bottom:  5px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+

@@ -1,0 +1,43 @@
+.vue-logo__top{
+  display: block; /*takes out full width*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.nav__navBox{
+  margin-top: 20px;
+  background-color: white;
+  border-width: 1px 0px 1px 0px;
+  border-style: solid none solid none;
+  border-color: dimgray;
+  background-color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+}
+
+.nav-link__pagenav:link{
+  color: dimgray;
+  font-family: Ubuntu;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-top: 50px;
+
+}
+
+.nav-link__pagenav:visited, .nav-link__pagenav:active{
+  color: dimgray;
+  font-family: Ubuntu;
+  text-decoration: none;
+}
+
+.nav-link__pagenav:hover{
+  color: dimgray;
+  font-family: Ubuntu;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+

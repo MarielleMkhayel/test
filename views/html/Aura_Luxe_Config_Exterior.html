@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vue Automotive - Aura Configurator</title>
+  <link rel="stylesheet" type="text/css" href="..\..\CSS\vehicle_config_IntExt.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <meta name = 'viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body  onload="changeHandler()">
+    <!-- Upper Logo image -->
+
+     <!-- Upper-body Vue logo image-->
+     <img src="../../Images/VueLogW7.png" class="vue-logo__top" alt="Logo">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <hr>
+     <nav>
+      <ul class="nav justify-content-center">
+      <li class="nav-item__pagenav">
+        <a class="nav-link__pagenav" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item__pagenav">
+        <a class="nav-link__pagenav" href="about.html">ABOUT US</a>
+      </li>
+      <li class="nav-item__pagenav">
+        <a class="nav-link__pagenav" href="products.html">PRODUCTS</a>
+      </li>
+      <li class="nav-item__pagenav">
+        <a class="nav-link__pagenav" href="contact.html">CONTACT US</a>
+      </li>
+    </ul>
+    </nav>
+    <hr>
+
+<!--Dynamic Image div-->
+<div class="config__dynamicImage-div" id="carExtImageDiv">
+    <img class="config__dynamicImage" src="" id="carExtImage" crossorigin="anonymous">
+      <h3 class="config__dynamicPrice-div"> Price: <span id="dynamic_price"> </span>$</h3>
+</div>
+<!--Exterior options div-->
+<div class="config__options-div">
+<!--Color div-->
+  <h2 style="font-family: Ubuntu, Arial, Helvetica, sans-serif"> Color </h2>
+    <div class="config__options-grid">
+      <a class="config__option-link" href="javascript:void(0)" onclick="setArdentBlackFlag()">
+      <div class="config__option-option">
+        <img src="Config_Images\Sport\CArdentBlack.png" class="config__option-image" id="ardentBlack" type="radio">
+        <p>Ardent Black<br><strong>0$</strong></p>
+      </div>
+      </a>
+      <a class="config__option-link" href="javascript:void(0)" onclick="setExcellenceMauveFlag()">
+      <div class="config__option-option">
+        <img src="Config_Images\Luxe\CExcellenceMauve.png" class="config__option-image" id="excellenceMauve" type="radio">
+        <p>Excellence Mauve<br><strong>1000$</strong></p>
+      </div>
+      </a>
+      <a class="config__option-link" href="javascript:void(0)" onclick="setOzelaisFlag()">
+        <div class="config__option-option">
+          <img src="Config_Images\Luxe\COzelais.png" class="config__option-image" id="ozelais" type="radio">
+          <p>Ozelais<br><strong>1500$</strong></p>
+        </div>
+        </a>
+        <a class="config__option-link" href="javascript:void(0)" onclick="setChampagneMystFlag()">
+          <div class="config__option-option">
+            <img src="Config_Images\Luxe\CChampagneMyst.png" class="config__option-image" id="champagneMyst" type="radio">
+            <p>Champagne Myst<br><strong>2000$</strong></p>
+          </div>
+          </a>
+    </div>
+  <!--Rim div-->
+    <h2 style="font-family: Ubuntu, Arial, Helvetica, sans-serif"> Rim </h2>
+    <div class="config__options-grid">
+      <a class="config__option-link" href="javascript:void(0)" onclick="setSmallRimFlag()">
+      <div class="config__option-option">
+        <img src="Config_Images\Luxe\RimS1.png" class="config__option-image" id="smallRim" type="radio">
+        <p>18" 5-Spoke<br><strong>0$</strong></p>
+      </div>
+      </a>
+      <a class="config__option-link" href="javascript:void(0)" onclick="setLargeRimFlag()">
+      <div class="config__option-option">
+        <img src="Config_Images\Luxe\RimL1.png" class="config__option-image" id="largeRim" type="radio">
+        <p>20" Multispoke<br><strong>1300$</strong></p>
+      </div>
+      </a>
+    </div>
+    <!--Sunroof div-->
+    <h2 style="font-family: Ubuntu, Arial, Helvetica, sans-serif"> Sunroof </h2>
+    <div class="config__options-grid">
+      <a class="config__option-link" href="javascript:void(0)" onclick="setNoRoofFlag()">
+      <div class="config__option-option">
+        <img src="Config_Images\Sport\Roof1.png" class="config__option-image" id="noRoof" type="radio">
+        <p>Sunroof Deletion<br><strong>0$</strong></p>
+      </div>
+      </a>
+      <a class="config__option-link" href="javascript:void(0)" onclick="setSunRoofFlag()">
+      <div class="config__option-option">
+        <img src="Config_Images\Sport\Roof2.png" class="config__option-image" id="sunRoof" type="radio">
+        <p>Sunroof<br><strong>800$</strong></p>
+      </div>
+      </a>
+    </div>
+    <br>
+  <a href="Aura_Luxe_Config_Interior.html" class="config__next" id="nextButton" onclick="extImageExporter()">
+    NEXT: INTERIOR
+  </a>
+  </div>
+</div>
+<script type="text/javascript" src="../../JavaScript/Aura_Luxe_Config_Exterior.js" async></script>
+</body>
+</html>

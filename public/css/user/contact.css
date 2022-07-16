@@ -1,0 +1,79 @@
+/*TOP ITEMS*/
+/*The navigation items on the About Us and Contact Us page are different due to styling preferences*/
+.vue-logo__top{
+  display: block; /*takes out full width*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.contact__navDiv{
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-link__pagenav:link{
+  color: dimgray;
+  font-family: Ubuntu;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-top: 50px;
+
+}
+
+.nav-link__pagenav:visited, .nav-link__pagenav:active{
+  color: dimgray;
+  font-family: Ubuntu;
+  text-decoration: none;
+}
+
+.nav-link__pagenav:hover{
+  color: dimgray;
+  font-family: Ubuntu;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*The below part was left recycled from the previous website, as it enhanced the navbar looks by chance.*/
+.nav2{
+  height: 0%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 21.5%;
+  margin-bottom: 0%;
+}
+
+.contact__body{
+  background-image: url("https://video.fbey9-1.fna.fbcdn.net/v/t39.30808-6/289022009_5190732244347121_6778685444818654543_n.jpg?stp=dst-jpg_p960x960&_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=MxxuaUdlCnMAX8bp5mO&tn=ndeSL4T7tMYXuGFR&_nc_ht=video.fbey9-1.fna&oh=00_AT__bwgzgd6HsEy98qNFpCpJcvvQaLyrhS1dJQFJqiTfag&oe=62B240BB");
+ }
+
+
+.contact__header{
+  font-family: Ubuntu;
+  margin-left: 15px;
+  color: white;
+}
+
+.contact__contactFlex{
+  border-style: none none none none;
+  border-radius: 50px 50px 50px 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color:   white;
+  text-align:   left;
+  flex-basis:   auto;
+  margin-bottom:  20px;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  padding-right: 30px;
+}
+
+.contact__contactText{
+  font-family: Ubuntu;
+  color: #666666;
+  margin-left: 0px;
+  padding-top: 10px;
+}

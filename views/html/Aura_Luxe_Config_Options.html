@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue Automotive - Home</title>
+     <link rel="stylesheet" type="text/css" href="..\..\CSS\vehicle_config_options.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+   <meta name = 'viewport' content='width=device-width, initial-scale=1'>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body onload="changeHandler()">
+   <!-- Upper-body Vue logo image-->
+   <div class="header__upperImage">
+    <img src="../../Images/VueLogW7.png" class="vue-logo__top" alt="Logo">
+    </div>
+    <nav>
+     <div class="nav__navBox">
+       <ul class="nav justify-content-center">
+       <li class="nav-item__pagenav">
+         <a class="nav-link__pagenav" href="#">HOME</a>
+       </li>
+       <li class="nav-item__pagenav">
+         <a class="nav-link__pagenav" href="about.html">ABOUT US</a>
+       </li>
+       <li class="nav-item__pagenav">
+         <a class="nav-link__pagenav" href="products.html">PRODUCTS</a>
+       </li>
+       <li class="nav-item__pagenav">
+         <a class="nav-link__pagenav" href="contact.html">CONTACT US</a>
+       </li>
+       <li class="nav-item__pagenav">
+         <a class="nav-link__pagenav" href="#">CONFIGURE YOUR OWN</a>
+       </li>
+       </ul>
+   </div>
+   </nav>
+<!-- Product cabinets -->
+<h3 class="options__dynamicPrice-div">Price: <span id="dynamic_price_options"></span></h3>
+<br>
+<div class="options__gridContainer">
+	<div class="options__optionCase">
+		<div class="options__option">
+			<img src="Vehicles\Aurelius\Product_Images\Aurelius2.png" class="options__optionImage">
+			<br>
+			<h2 class="options__optionName">360 Surround View Camera</h2>
+			<hr>
+			<p class="options__optionDescription">A camera system that allows the driver to view all surroundings while reversing
+				<br><br><strong>1300$</strong></p>
+			<button class="options__button" onclick=setCamFlag()>Add</button>
+			<button class="options__button" onclick=setNoCamFlag()>Remove</button>
+		</div>
+	</div>
+	<div class="options__optionCase">
+		<div class="options__option">
+			<img src="Vehicles\Aurelius\Product_Images\Aurelius2.png" class="options__optionImage">
+			<br>
+			<h2 class="options__optionName">Heated and Ventilated Seats</h2>
+			<hr>
+			<p class="options__optionDescription">Adjustable-temperature seats suitable for all climates, ensuring maximum comfort
+				<br><br><strong>900$</strong></p>
+			<button class="options__button" onclick=setSeatFlag()>Add</button>
+			<button class="options__button" onclick=setNoSeatFlag()>Remove</button>
+	</div>
+</div>
+	<div class="options__optionCase">
+		<div class="options__option">
+			<img src="Vehicles\Aurelius\Product_Images\Aurelius2.png" class="options__optionImage">
+			<br>
+			<h2 class="options__optionName">24-Speaker Sound System</h2>
+			<hr>
+			<p class="options__optionDescription">Mark Levinson-developed audio system that turns your vehicle into a personal concert hall
+				<br><br><strong> 1000$</strong></p>
+			<button class="options__button" onclick=setSoundFlag()>Add</button>
+			<button class="options__button" onclick=setNoSoundFlag()>Remove</button>
+		</div>
+	</div>
+</div>
+<div class="options__nextDiv">
+<a href="Aura_Luxe_Config_Summary.html" class="config__next-center" id="nextButton">
+	NEXT: Summary
+</a>
+</div>
+<script type="text/javascript" src="../../JavaScript/Aura_Luxe_Config_Options.js" async></script>
+</body>
+</html>

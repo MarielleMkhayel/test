@@ -1,0 +1,176 @@
+.vue-logo__top{
+  display: block; /*takes out full width*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.nav-link__pagenav:link{
+  color: dimgray;
+  font-family: Ubuntu;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-top: 50px;
+
+}
+
+.nav-link__pagenav:visited, .nav-link__pagenav:active{
+  color: dimgray;
+  font-family: Ubuntu;
+  text-decoration: none;
+}
+
+.nav-link__pagenav:hover{
+  color: dimgray;
+  font-family: Ubuntu;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*The below part was left recycled from the previous website, as it enhanced the navbar looks by chance.*/
+.nav2{
+  height: 0%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 21.5%;
+  margin-bottom: 0%;
+}
+
+.vehicle__header{
+  font-family: Ubuntu;
+  margin-left: 15px;
+  color: black;
+}
+
+.vehicle__flexBox{
+  display: flex;
+  flex-direction:   column; /*flex items stacked on top of each other*/
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.vehicle__infoBox-left{
+  border-style: solid none solid solid;
+  border-radius: 50px 50px 50px 50px;
+  border-color: lightgrey lightgrey lightgrey lightgrey;
+  background-color:   white;
+  text-align:   center;
+  flex-basis:   auto; /*automatically sets flex item size*/
+  margin-bottom:  20px;
+}
+
+.vehicle__infoBox-right{
+  border-style: solid solid solid none;
+  border-radius: 50px 50px 50px 50px;
+  border-color: lightgrey lightgrey lightgrey lightgrey;
+  background-color:   white;
+  text-align:   center;
+  flex-basis:   auto; /*automatically sets flex item size*/
+  margin-bottom:  20px;
+}
+
+
+.vehicle__infoBox-center{
+  border-style: solid solid solid solid;
+  border-radius: 50px 50px 50px 50px;
+  border-color: lightgrey lightgrey lightgrey lightgrey;
+  background-color:   white;
+  text-align:   left;
+  flex-basis:   auto; /*automatically sets flex item size*/
+  margin-bottom:  20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.vehicle__infoBox-configLink:link, .vehicle__infoBox-configLink:visited, .vehicle__infoBox-configLink:active{
+  border-style: solid solid solid solid;
+  border-radius: 50px 50px 50px 50px;
+  border-color: lightgrey lightgrey lightgrey lightgrey;
+  background-color:   white;
+  text-align:   center;
+  flex-basis:   auto; /*automatically sets flex item size*/
+  margin-bottom:  20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  font-size: 25px;
+  text-decoration: none;
+  color: dimgray;
+}
+
+.vehicle__slogan{
+  color:  dimgray  ;
+  font-family:  Ubuntu;
+  padding-top:  30px;
+}
+
+.vehicle__description{
+font-family:  Ubuntu;
+color:  black;
+font-size:  21.5px;
+/*font-style:   italic*/  ;
+}
+
+.vehicle__image-left{
+  border-style: solid none solid solid;
+  border-radius: 50px 0px 0px 50px;
+  border-color: lightgrey lightgrey lightgrey lightgrey;
+  float:  left; /*image floats on the left part of container*/
+  object-fit: cover;
+  width:  40%;
+  height  :   35%;
+  display:  block ;
+}
+
+.vehicle__image-right{
+  border-style: solid solid solid none;
+  border-radius: 0px 50px 50px 0px;
+  border-color: lightgrey lightgrey lightgrey lightgrey;
+  float:  right; /*image floats on the right part of container*/
+  object-fit: cover; 
+  width:  40%;
+  height  :   35%;
+  display:  block ;
+}
+
+.ul-center{
+  padding-left: 50px;
+}
+
+.li-center{
+  font-family: calibri;
+  color:  black;
+  padding-left: 10px;
+}
+.tablecenter{
+  margin-top: 25px;
+  position: relative; center:  0; /*position is relative to table's normal position*/
+  margin-bottom: 25px;
+  width: 100%;
+  padding-right: 25px;
+}
+
+.thcenter{
+  background-color: dimgrey;
+  text-align: center;
+  font-size: 19px;
+  font-family: calibri;
+  color: lightgrey;
+}
+
+.tdcenter1{
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 17px;
+  font-family: calibri;
+}
+
+.tdcenter2{
+  background-color: darkgrey;
+  text-align: center;
+  font-size: 17px;
+  font-family: calibri;
+}

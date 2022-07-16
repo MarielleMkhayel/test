@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vue Automotive - Aura Configurator</title>
+  <link rel="stylesheet" type="text/css" href="..\..\CSS\vehicle_config_summary.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <meta name = 'viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body  onload="loadHandler()">
+  <div class="header__upperImage">
+    <img src="../../Images/VueLogW7.png" class="vue-logo__top" alt="Logo">
+    </div>
+    <nav>
+     <div class="nav__navBox">
+       <ul class="nav justify-content-center">
+       <li class="nav-item__pagenav">
+         <a class="nav-link__pagenav" href="#">HOME</a>
+       </li>
+       <li class="nav-item__pagenav">
+         <a class="nav-link__pagenav" href="about.html">ABOUT US</a>
+       </li>
+       <li class="nav-item__pagenav">
+         <a class="nav-link__pagenav" href="products.html">PRODUCTS</a>
+       </li>
+       <li class="nav-item__pagenav">
+         <a class="nav-link__pagenav" href="contact.html">CONTACT US</a>
+       </li>
+       <li class="nav-item__pagenav">
+         <a class="nav-link__pagenav" href="#">CONFIGURE YOUR OWN</a>
+       </li>
+       </ul>
+   </div>
+   </nav>
+
+<!--Dynamic Image div-->
+<div class="summary__summaryGrid">
+  <div class="summary__imageGrid">
+    Image Grid
+    <div class="summary__imageContainer1">
+      <img src="" class="summary__carImage" id="summary__carExtImage" />
+    </div>
+    <div class="summary__imageContainer2">
+      <img src="" class="summary__carImage" id="summary__carIntImage" />
+    </div> -->
+  </div> 
+  <div class="summary__billGrid">
+  <h1 class="summary__pageHeader">Summary</h1>
+    <div class="summary__infoBox">
+      <h2 class="summary__pageHeader">Vehicle Base Statistics</h2>
+      <p class="summary__detail" id="carname"></p>
+    </div>
+    <div class="summary__infoBox">
+      <h2 class="summary__pageHeader">Exterior Configuration</h2>
+      <p class="summary__detail" id="color"></p>
+      <p class="summary__detail" id="rim"></p>
+      <p class="summary__detail" id="roof"></p>
+    </div>
+    <div class="summary__infoBox">
+      <h2 class="summary__pageHeader">Interior Configuration</h2>
+      <p class="summary__detail" id="seat"></p>
+      <p class="summary__detail" id="trim"></p>
+    </div>
+    <div class="summary__infoBox">
+      <h2 class="summary__pageHeader">Additional Options</h2>
+      <p class="summary__detail" id="camera"></p>
+      <p class="summary__detail" id="heatedSeat"></p>
+      <p class="summary__detail" id="sound"></p>
+    </div>
+    <br>
+    <div class="summary__priceCodeDiv">
+      <h2 class="summary__pageHeader">Total Price: <span class="summary__totalPrice" id="totalprice"> </span></h2>
+      <h2 class="summary__pageHeader">Configuration Code: <span class="summary__configCode" id="configcode"> </span></h2>
+    </div>
+    <div class="summary__orderDiv">
+      <button type="submit" onsubmit="" href="" class="summary__orderButton">ORDER YOUR VEHICLE</button>
+    </div>
+ </div>
+</div>
+<script type="text/javascript" src="../../JavaScript/Aura_Luxe_Config_Summary.js" async></script>
+</body>
+</html>

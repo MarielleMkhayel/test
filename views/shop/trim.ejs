@@ -1,0 +1,134 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="../../public/css/user/vehicle_trim.css">
+
+</head>
+
+<body>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<hr>
+<%- include('../includes/nav.ejs') %>
+<br>
+<hr>
+<h2 class="trim__header">SELECT A TRIM LEVEL</h2>
+<br>
+<!-- Product information snippets -->
+<div class="trim__flexBox">
+  <a href="/ext1/<%=product.id%>" class="trim__infoBox-right">
+    <img src="<%= trimImg1 %>" class="trim__image">
+    <h1 class="trim__name"> <%= trimName1 %> </h1>
+    <hr> 
+    <br>  
+    <p class="trim__description"><%= trimDescription1 %>
+      <div class="trim__standard">
+        <ul class="ul-center">
+        <li class="li-center"> <%= stand1 %> </li>
+        <li class="li-center"> <%= stand2 %>  </li>
+        <li class="li-center"> <%= stand3 %>  </li>
+        </ul>
+      </div>
+    </p>
+    <p class="trim__specs">
+    <br>
+    <i><strong>Starting MSRP </strong>$<%= trimPrice1 %></i><br>
+    <strong><i>Performance </strong><%= engineDisplacement1 %>L engine, <%= transmission1%> transmission, <%= accel1%>s (0-60 mph), <%= fuelCons1 %>L/100km fuel consumption</i><br>
+    </p> 
+  </a>
+  <a href="/ext2/<%=product.id%>" class="trim__infoBox-right">
+    <img src="<%= trimImg2 %>" class="trim__image">
+    <h1 class="trim__name"> <%= trimName2 %> </h1>
+    <hr> 
+    <br>  
+    <p class="trim__description"><%= trimDescription2 %>
+      <div class="trim__standard">
+        <ul class="ul-center">
+        <li class="li-center"> <%= stand4 %> </li>
+        <li class="li-center"> <%= stand5 %>  </li>
+        <li class="li-center"> <%= stand6 %>  </li>
+        </ul>
+      </div>
+    </p>
+    <p class="trim__specs">
+    <br>
+    <i><strong>Starting MSRP </strong>$<%= trimPrice2 %></i><br>
+    <strong><i>Performance </strong><%= engineDisplacement2 %>L engine, <%= transmission2%> transmission, <%= accel2%>s (0-60 mph), <%= fuelCons2 %>L/100km fuel consumption</i><br>
+    </p> 
+  </a>
+  <div class="trim__infoBox-center">
+    <h3 class="trim__header"> Body Specifications </h3>
+    <hr>
+    <ul class="ul-center">
+    <li class="li-center"> Bodystyle: <%= bodyStyle %> </li>
+    <li class="li-center"> Length/Width/WheelBase: <%= lengthWidthWheelBase %> </li>
+    <li class="li-center"> Chassis type: <%= chassisType %> </li>
+    <li class="li-center"> Chassis material: <%= chassisMaterial %> </li>
+    <li class="li-center"> Suspension: <%= suspension %> </li>
+    </ul>
+  </div>
+  <div class="trim__infoBox-center">
+    <h3 class="trim__header"> Trim Specifications </h3>
+    <hr>
+    <table class="tablecenter">
+        <tr class="trcenter">
+          <th class="thcenter"> Attribute </th>
+          <th class="thcenter"> <%= attribute1 %> </th>
+          <th class="thcenter"> <%= attribute2 %> </th>
+        </tr>
+        <tr class="trcenter">
+          <td class="tdcenter1"> Engine </td>
+          <td class="tdcenter1"> <%= engine1 %> </td>
+          <td class="tdcenter1"> <%= engine2 %> </td>
+        </tr>
+        <tr class="trcenter">
+          <td class="tdcenter2"> Engine Material </td>
+          <td class="tdcenter2"> <%= engineMaterial1 %> </td>
+          <td class="tdcenter2"> <%= engineMaterial2 %> </td>
+        </tr>
+        <tr class="trcenter">
+          <td class="tdcenter1"> Horsepower </td>
+          <td class="tdcenter1"> <%= horsePower1 %></td>
+          <td class="tdcenter1"> <%= horsePower2 %> </td>
+        </tr>
+        <tr class="trcenter">
+          <td class="tdcenter2"> Torque </td>
+          <td class="tdcenter2"> <%= torque1 %> </td>
+          <td class="tdcenter2"> <%= torque2 %> </td>
+        </tr>
+        <tr class="trcenter">
+          <td class="tdcenter1"> Acceleration (0-60 mph) </td>
+          <td class="tdcenter1"> <%= accel1 %> </td>
+          <td class="tdcenter1"> <%= accel2 %> </td>
+        </tr>
+        <tr class="trcenter">
+          <td class="tdcenter2"> Fuel Consumption </td>
+          <td class="tdcenter2"> <%= fuelCons1 %> </td>
+          <td class="tdcenter2"> <%= fuelCons2 %> </td>
+        </tr>
+        <tr class="trcenter">
+          <td class="tdcenter1"> Top Speed </td>
+          <td class="tdcenter1"> <%= topSpeed1 %></td>
+          <td class="tdcenter1"> <%= topSpeed2 %> </td>
+        </tr>
+        <tr class="trcenter">
+          <td class="tdcenter2"> Transmission </td>
+          <td class="tdcenter2"> <%= transmission1 %> </td>
+          <td class="tdcenter2"> <%= transmission2 %> </td>
+        </tr>
+        <tr class="trcenter">
+          <td class="tdcenter1"> Weight </td>
+          <td class="tdcenter1"> <%= weight1 %> </td>
+          <td class="tdcenter1"> <%= weight2 %> </td>
+        </tr>
+        <tr class="trcenter">
+          <td class="tdcenter2"> Tyres (Front/Rear) </td>
+          <td class="tdcenter2"> <%= tyres1 %> </td>
+          <td class="tdcenter2"> <%= tyres2 %> </td>
+        </tr>
+        <tr class="trcenter">
+          <td class="tdcenter1"> Driving Aids </td>
+          <td class="tdcenter1"> <%= drivingAid11 %> <br><%= drivingAid12 %><br><%= drivingAid13 %></td>
+          <td class="tdcenter1"> <%= drivingAid21 %><br><%= drivingAid22 %><br><%= drivingAid23 %></td>
+        </tr>
+    </table>
+  </div>    
+</div>
+<%- include('../includes/end.ejs') %>

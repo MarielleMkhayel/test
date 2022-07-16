@@ -1,0 +1,149 @@
+.vue-logo__top{
+  display: block; /*takes out full width*/
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.nav__navBox{
+  margin-top: 20px;
+  margin-bottom: 3px;
+  background-color: white;
+  border-width: 1px 0px 1px 0px;
+  border-style: solid none solid none;
+  border-color: dimgray;
+  background-color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+}
+
+.nav-link__pagenav:link{
+  color: dimgray;
+  font-family: Ubuntu;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-top: 50px;
+
+}
+
+.nav-link__pagenav:visited, .nav-link__pagenav:active{
+  color: dimgray;
+  font-family: Ubuntu;
+  text-decoration: none;
+}
+
+.nav-link__pagenav:hover{
+  color: dimgray;
+  font-family: Ubuntu;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
+.summary__imageGrid{
+  display: grid;
+  background-color: red;
+  width: 830px;
+  margin-top: 0px;
+  grid-auto-columns: auto;
+  row-gap: 0px;
+  float: left;
+  position: fixed;
+
+  
+}
+
+.summary__imageContainer1{
+  grid-area: 1 / 1 / 1 / 1;
+  background-color: black;
+  height: 500px;
+}
+
+.summary__imageContainer2{
+  grid-area: 2 / 1 / 2 / 1;
+  background-color: yellow;
+  height: 500px;
+}
+
+.summary__carImage{
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+}
+
+.summary__billGrid{
+  float: right;
+  right: 0px;
+  width: 1100px;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-top: 15px;
+  margin-top: 0px;
+  position: relative;
+}
+
+.summary__pageHeader{
+  font-family: Ubuntu;
+}
+
+.summary__detailHeader{
+  font-family: Ubuntu;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.summary__infoBox{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.summary__detail{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Ubuntu;
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+.summary__orderDiv{
+  margin-top: 25px;
+  margin-left: 275px;
+  margin-bottom: 25px;
+}
+
+.summary__orderButton{
+  font-family: Ubuntu;
+  font-size: 34px;
+  background-image: linear-gradient(to right, #CDCDCD, #9F9F9F);
+  padding: 10px 20px 10px 20px;
+  box-shadow: 1px 1px 1px 1px #fff inset;
+  color: white;
+  text-shadow: 2px gray;
+  font-weight: bold;
+  border-style: solid !important;
+  border-color: dimgray !important;
+}
+
+.summary__orderButton:hover{
+  font-family: Ubuntu;
+  font-size: 34px;
+  background-image: linear-gradient(to right, #CDCDCD, #9F9F9F) !important;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 2px 2px 2px 2px #fff inset !important;
+  color: white !important;
+  text-shadow: 2px gray !important;
+  font-weight: bold;
+  border-style: solid !important;
+  border-color: dimgray !important;
+}
+/******************************************************************************************************************* */
+
+
+
+
+
+
