@@ -23,6 +23,10 @@ module.exports= class Product {
         this.price= pr;
     }
 
+    addDetails(details){
+        this.details = details;
+    }
+
     save(){
         this.id= Math.random().toString();
         readingProds( products => { //since readingProds byekhod one argument w ana hon 3m 3ayetla, and plus since im aware that cb is a fct, then all of this fct btw () is the cb.

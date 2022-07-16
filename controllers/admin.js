@@ -89,73 +89,139 @@ exports.postAddCar = (req, res, next) => {
     const drivingAid22= req.body.drivingAid22;
     const drivingAid23= req.body.drivingAid23;
     const det = new Details(carousel1, carousel2, carousel3, carousel4, carousel5, carousel6, carousel7, carousel8, pageHeader, imageUrl1, vehicleHeader1, vehicleText1, imageUrl2, vehicleHeader2, vehicleText2, imageUrl3, vehicleHeader3, vehicleText3, bodyStyle, lengthWidthWheelBase, chassisType, chassisMaterial, enginePlacement, suspension, cargoSpace, attribute1, attribute2, engine1, engine2, engineMaterial1, engineMaterial2, horsepower1, horsepower2, torque1, torque2, acc1, acc2, fuel1, fuel2, topSpeed1, topSpeed2, trans1, trans2, weight1, weight2, tyres1, tyres2, drivingAid11, drivingAid12, drivingAid13, drivingAid21, drivingAid22, drivingAid23);
-    det.save();
+    // det.save();
 
     const prodId= req.params.productId;
-    //console.log(prodId + " gr");
-    Details.findById(prodId, product => {
-    if (!product) {
-      return res.redirect('/home');
-    };
-    //console.log("fe");
-     res.render('shop/car-details', {
-      pageTitle: "Car Details",
-       product: product,
-       carousel1: product.carousel1,
-       carousel2: product.carousel2,
-       carousel3: product.carousel3,
-       carousel4: product.carousel4,
-       carousel5: product.carousel5,
-       carousel6: product.carousel6,
-       carousel7: product.carousel7,
-       carousel8: product.carousel8,
-       pageHeader: product.pageHeader,
-       imageUrl1: product.imageUrl1,
-       vehicleHeader1: product.vehicleHeader1,
-       vehicleText1: product.vehicleText1,
-       imageUrl2: product.imageUrl2,
-       vehicleHeader2: product.vehicleHeader2,
-       vehicleText2: product.vehicleText2,
-       imageUrl3: product.imageUrl3,
-       vehicleHeader3: product.vehicleHeader3,
-       vehicleText3: product.vehicleText3,
-       bodyStyle: product.bodyStyle,
-       lengthWidthWheelBase: product.lengthWidthWheelBase,
-       chassisType: product.chassisType,
-       chassisMaterial: product.chassisMaterial,
-       enginePlacement: product.enginePlacement,
-       suspension: product.suspension,
-       cargoSpace: product.cargoSpace,
-       attribute1: product.attribute1,
-       attribute2: product.attribute2,
-       engine1: product.engine1,
-       engine2: product.engine2,
-       engineMaterial1: product.engineMaterial1,
-       engineMaterial2: product.engineMaterial2,
-       horsepower1: product.horsepower1,
-       horsepower2: product.horsepower2,
-       torque1: product.torque1,
-       torque2: product.torque2,
-       acc1: product.acc1,
-       acc2: product.acc2,
-       fuel1: product.fuel1,
-       fuel2: product.fuel2,
-       topSpeed1: product.topSpeed1,
-       topSpeed2: product.topSpeed2,
-       trans1: product.trans1,
-       trans2: product.trans2,
-       weight1: product.weight1,
-       weight2: product.weight2,
-       tyres1: product.tyres1,
-       tyres2: product.tyres2,
-       drivingAid11: product.drivingAid11,
-       drivingAid12: product.drivingAid12,
-       drivingAid13: product.drivingAid13,
-       drivingAid21: product.drivingAid21,
-       drivingAid22: product.drivingAid22,
-       drivingAid23: product.drivingAid23
-      });
+
+    Product.findById(prodId, product => {
+      if (!product) {
+        return res.redirect('/home');
+      }
+      product.addDetails(det);
+      
+      res.render('shop/car-details', {
+        pageTitle: "Car Details",
+         product: product,
+         carousel1: product.details.carousel1,
+         carousel2: product.details.carousel2,
+         carousel3: product.details.carousel3,
+         carousel4: product.details.carousel4,
+         carousel5: product.details.carousel5,
+         carousel6: product.details.carousel6,
+         carousel7: product.details.carousel7,
+         carousel8: product.details.carousel8,
+         pageHeader: product.details.pageHeader,
+         imageUrl1: product.details.imageUrl1,
+         vehicleHeader1: product.details.vehicleHeader1,
+         vehicleText1: product.details.vehicleText1,
+         imageUrl2: product.details.imageUrl2,
+         vehicleHeader2: product.details.vehicleHeader2,
+         vehicleText2: product.details.vehicleText2,
+         imageUrl3: product.details.imageUrl3,
+         vehicleHeader3: product.details.vehicleHeader3,
+         vehicleText3: product.details.vehicleText3,
+         bodyStyle: product.details.bodyStyle,
+         lengthWidthWheelBase: product.details.lengthWidthWheelBase,
+         chassisType: product.details.chassisType,
+         chassisMaterial: product.details.chassisMaterial,
+         enginePlacement: product.details.enginePlacement,
+         suspension: product.details.suspension,
+         cargoSpace: product.details.cargoSpace,
+         attribute1: product.details.attribute1,
+         attribute2: product.details.attribute2,
+         engine1: product.details.engine1,
+         engine2: product.details.engine2,
+         engineMaterial1: product.details.engineMaterial1,
+         engineMaterial2: product.details.engineMaterial2,
+         horsepower1: product.details.horsepower1,
+         horsepower2: product.details.horsepower2,
+         torque1: product.details.torque1,
+         torque2: product.details.torque2,
+         acc1: product.details.acc1,
+         acc2: product.details.acc2,
+         fuel1: product.details.fuel1,
+         fuel2: product.details.fuel2,
+         topSpeed1: product.details.topSpeed1,
+         topSpeed2: product.details.topSpeed2,
+         trans1: product.details.trans1,
+         trans2: product.details.trans2,
+         weight1: product.details.weight1,
+         weight2: product.details.weight2,
+         tyres1: product.details.tyres1,
+         tyres2: product.details.tyres2,
+         drivingAid11: product.details.drivingAid11,
+         drivingAid12: product.details.drivingAid12,
+         drivingAid13: product.details.drivingAid13,
+         drivingAid21: product.details.drivingAid21,
+         drivingAid22: product.details.drivingAid22,
+         drivingAid23: product.details.drivingAid23
+        });
     });
+
+    //console.log(prodId + " gr");
+    // Details.findById(prodId, product => {
+    // if (!product) {
+    //   return res.redirect('/home');
+    // };
+    // //console.log("fe");
+    //  res.render('shop/car-details', {
+    //   pageTitle: "Car Details",
+    //    product: product,
+    //    carousel1: product.carousel1,
+    //    carousel2: product.carousel2,
+    //    carousel3: product.carousel3,
+    //    carousel4: product.carousel4,
+    //    carousel5: product.carousel5,
+    //    carousel6: product.carousel6,
+    //    carousel7: product.carousel7,
+    //    carousel8: product.carousel8,
+    //    pageHeader: product.pageHeader,
+    //    imageUrl1: product.imageUrl1,
+    //    vehicleHeader1: product.vehicleHeader1,
+    //    vehicleText1: product.vehicleText1,
+    //    imageUrl2: product.imageUrl2,
+    //    vehicleHeader2: product.vehicleHeader2,
+    //    vehicleText2: product.vehicleText2,
+    //    imageUrl3: product.imageUrl3,
+    //    vehicleHeader3: product.vehicleHeader3,
+    //    vehicleText3: product.vehicleText3,
+    //    bodyStyle: product.bodyStyle,
+    //    lengthWidthWheelBase: product.lengthWidthWheelBase,
+    //    chassisType: product.chassisType,
+    //    chassisMaterial: product.chassisMaterial,
+    //    enginePlacement: product.enginePlacement,
+    //    suspension: product.suspension,
+    //    cargoSpace: product.cargoSpace,
+    //    attribute1: product.attribute1,
+    //    attribute2: product.attribute2,
+    //    engine1: product.engine1,
+    //    engine2: product.engine2,
+    //    engineMaterial1: product.engineMaterial1,
+    //    engineMaterial2: product.engineMaterial2,
+    //    horsepower1: product.horsepower1,
+    //    horsepower2: product.horsepower2,
+    //    torque1: product.torque1,
+    //    torque2: product.torque2,
+    //    acc1: product.acc1,
+    //    acc2: product.acc2,
+    //    fuel1: product.fuel1,
+    //    fuel2: product.fuel2,
+    //    topSpeed1: product.topSpeed1,
+    //    topSpeed2: product.topSpeed2,
+    //    trans1: product.trans1,
+    //    trans2: product.trans2,
+    //    weight1: product.weight1,
+    //    weight2: product.weight2,
+    //    tyres1: product.tyres1,
+    //    tyres2: product.tyres2,
+    //    drivingAid11: product.drivingAid11,
+    //    drivingAid12: product.drivingAid12,
+    //    drivingAid13: product.drivingAid13,
+    //    drivingAid21: product.drivingAid21,
+    //    drivingAid22: product.drivingAid22,
+    //    drivingAid23: product.drivingAid23
+    //   });
+    // });
   };
 
   exports.getEditCar = (req, res, next) => {
