@@ -23,12 +23,20 @@ module.exports= class Product {
         this.price= pr;
     }
 
-    addDetails(details){
+    static addDetails(id, details, cb){
         this.details = details;
+        readingProds( products => { //since readingProds byekhod one argument w ana hon 3m 3ayetla, and plus since im aware that cb is a fct, then all of this fct btw () is the cb.
+            var product = products.find(p => p.id === id);
+            product.details = details;
+            fs.writeFile(p, JSON.stringify(products), err => { //im converting from array to json
+                //console.log(err);
+            });
+            cb(product);
+        });
     }
 
     save(){
-        this.id= Math.random().toString();
+        this.id= Math.random().toString(); //! this is not efficient, check this https://stackoverflow.com/questions/23327010/how-to-generate-unique-id-with-node-js
         readingProds( products => { //since readingProds byekhod one argument w ana hon 3m 3ayetla, and plus since im aware that cb is a fct, then all of this fct btw () is the cb.
             products.push(this); //this here refers to the class object Product, that's why we should use an arrow fct
             fs.writeFile(p, JSON.stringify(products), err => { //im converting from array to json

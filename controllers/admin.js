@@ -93,12 +93,10 @@ exports.postAddCar = (req, res, next) => {
 
     const prodId= req.params.productId;
 
-    Product.findById(prodId, product => {
+    Product.addDetails(prodId, det, product => {
       if (!product) {
         return res.redirect('/home');
       }
-      product.addDetails(det);
-      
       res.render('shop/car-details', {
         pageTitle: "Car Details",
          product: product,
@@ -155,73 +153,9 @@ exports.postAddCar = (req, res, next) => {
          drivingAid21: product.details.drivingAid21,
          drivingAid22: product.details.drivingAid22,
          drivingAid23: product.details.drivingAid23
-        });
+      });
     });
-
-    //console.log(prodId + " gr");
-    // Details.findById(prodId, product => {
-    // if (!product) {
-    //   return res.redirect('/home');
-    // };
-    // //console.log("fe");
-    //  res.render('shop/car-details', {
-    //   pageTitle: "Car Details",
-    //    product: product,
-    //    carousel1: product.carousel1,
-    //    carousel2: product.carousel2,
-    //    carousel3: product.carousel3,
-    //    carousel4: product.carousel4,
-    //    carousel5: product.carousel5,
-    //    carousel6: product.carousel6,
-    //    carousel7: product.carousel7,
-    //    carousel8: product.carousel8,
-    //    pageHeader: product.pageHeader,
-    //    imageUrl1: product.imageUrl1,
-    //    vehicleHeader1: product.vehicleHeader1,
-    //    vehicleText1: product.vehicleText1,
-    //    imageUrl2: product.imageUrl2,
-    //    vehicleHeader2: product.vehicleHeader2,
-    //    vehicleText2: product.vehicleText2,
-    //    imageUrl3: product.imageUrl3,
-    //    vehicleHeader3: product.vehicleHeader3,
-    //    vehicleText3: product.vehicleText3,
-    //    bodyStyle: product.bodyStyle,
-    //    lengthWidthWheelBase: product.lengthWidthWheelBase,
-    //    chassisType: product.chassisType,
-    //    chassisMaterial: product.chassisMaterial,
-    //    enginePlacement: product.enginePlacement,
-    //    suspension: product.suspension,
-    //    cargoSpace: product.cargoSpace,
-    //    attribute1: product.attribute1,
-    //    attribute2: product.attribute2,
-    //    engine1: product.engine1,
-    //    engine2: product.engine2,
-    //    engineMaterial1: product.engineMaterial1,
-    //    engineMaterial2: product.engineMaterial2,
-    //    horsepower1: product.horsepower1,
-    //    horsepower2: product.horsepower2,
-    //    torque1: product.torque1,
-    //    torque2: product.torque2,
-    //    acc1: product.acc1,
-    //    acc2: product.acc2,
-    //    fuel1: product.fuel1,
-    //    fuel2: product.fuel2,
-    //    topSpeed1: product.topSpeed1,
-    //    topSpeed2: product.topSpeed2,
-    //    trans1: product.trans1,
-    //    trans2: product.trans2,
-    //    weight1: product.weight1,
-    //    weight2: product.weight2,
-    //    tyres1: product.tyres1,
-    //    tyres2: product.tyres2,
-    //    drivingAid11: product.drivingAid11,
-    //    drivingAid12: product.drivingAid12,
-    //    drivingAid13: product.drivingAid13,
-    //    drivingAid21: product.drivingAid21,
-    //    drivingAid22: product.drivingAid22,
-    //    drivingAid23: product.drivingAid23
-    //   });
-    // });
+    
   };
 
   exports.getEditCar = (req, res, next) => {

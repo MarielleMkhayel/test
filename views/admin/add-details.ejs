@@ -8,272 +8,130 @@
     <%- include('../includes/nav.ejs') %>
 
     <main>
-      <div class="product-form" id="product-form-div">
-        <form action="/add-details/<%= product.id %>" method="post">
-          <div class="form-control">
-            <label for="carousel1">Carousel 1</label>
-            <input type="text" name="carousel1" id="carousel1">
-          </div>
-          <div class="form-control">
-            <label for="carousel2">Carousel 2</label>
-            <input type="text" name="carousel2" id="carousel2">
-          </div>
-          <div class="form-control">
-            <label for="carousel3">Carousel 3</label>
-            <input type="text" name="carousel3" id="imageUrl">
-          </div>
-          <div class="form-control">
-            <label for="carousel4">Carousel 4</label>
-            <input type="text" name="carousel4" id="imageUrl">
-          </div>
-          <div class="form-control">
-            <label for="carousel5">Carousel 5</label>
-            <input type="text" name="carousel5" id="imageUrl">
-          </div>
-          <div class="form-control">
-            <label for="carousel6">Carousel 6</label>
-            <input type="text" name="carousel6" id="imageUrl">
-          </div>
-          <div class="form-control">
-            <label for="carousel7">Carousel 7</label>
-            <input type="text" name="carousel7" id="imageUrl">
-          </div>
-          <div class="form-control">
-            <label for="carousel8">Carousel 8</label>
-            <input type="text" name="carousel8" id="imageUrl">
-          </div>
-          <div class="form-control">
-            <label for="pageHeader">Page Header</label>
-            <input type="text" name="pageHeader" id="title">
-          </div>
-          <div class="form-control">
-            <label for="imageUrl1">Image Url 1</label>
-            <input type="text" name="imageUrl1" id="description">
-          </div>
-          <div class="form-control">
-            <label for="vehicleHeader1">Vehicle Header 1</label>
-            <textarea name="vehicleHeader1" id="description" rows="5"></textarea>
-          </div>           
-          <div class="form-control">
-            <label for="vehicleText1">Vehicle Text 1</label>
-            <textarea name="vehicleText1" id="description" rows="5"></textarea>
-          </div>
-          <div class="form-control">
-            <label for="imageUrl2">Image Url 2</label>
-            <input type="text" name="imageUrl2" id="description">
-          </div>
-          <div class="form-control">
-            <label for="vehicleHeader2">Vehicle Header 2</label>
-            <input type="text" name="vehicleHeader2" id="description">
-          </div>
-          <div class="form-control">
-            <label for="vehicleText2">Vehicle Text 2</label>
-            <textarea name="vehicleText2" id="description" rows="5"></textarea>
-          </div>
-          <div class="form-control">
-            <label for="imageUrl3">Image Url 3</label>
-            <input type="text" name="imageUrl3" id="description">
-          </div>
-          <div class="form-control">
-            <label for="vehicleHeader3">Vehicle Header 3</label>
-            <input type="text" name="vehicleHeader3" id="description">
-          </div>
-          <div class="form-control">
-            <label for="vehicleText3">Vehicle Text 3</label>
-            <textarea name="vehicleText3" id="description" rows="5"></textarea>
-          </div> 
-          <div class="form-control">
-            <label for="bodyStyle">Body Style</label>
-            <input type="text" name="bodyStyle" id="title">
-          </div>    
-          <div class="form-control">
-            <label for="lengthWidthWheelBase">Length Width WheelBase</label>
-            <input type="text" name="lengthWidthWheelBase" id="title">
-          </div> 
-          <div class="form-control">
-            <label for="chassisType">Chassis Type</label>
-            <input type="text" name="chassisType" id="title">
-          </div> 
-          <div class="form-control">
-            <label for="chassisMaterial">Chassis Material</label>
-            <input type="text" name="chassisMaterial" id="title">
-          </div>
-          <div class="form-control">
-            <label for="enginePlacement">Engine Placement</label>
-            <input type="text" name="enginePlacement" id="title">
-          </div> 
-          <div class="form-control">
-            <label for="Suspension">Suspension</label>
-            <input type="text" name="Suspension" id="title">
-          </div>
-          <div class="form-control">
-            <label for="cargoSpace">Cargo Space</label>
-            <input type="text" name="cargoSpace" id="title">
-          </div>
-          <div class="form-control">
-            <label for="attribute1">Attribute 1</label>
-            <input type="text" name="attribute1" id="title">
-          </div>
-          <div class="form-control">
-            <label for="attribute2">Attribute 2</label>
-            <input type="text" name="attribute2" id="title">
-          </div>
-          <div class="form-control">
-            <label for="engine1">Engine 1</label>
-            <input type="text" name="engine1" id="title">
-          </div>
-          <div class="form-control">
-            <label for="engine2">Engine 2</label>
-            <input type="text" name="engine2" id="title">
-          </div>
-          <div class="form-control">
-            <label for="engineMaterial1">Engine Material 1</label>
-            <input type="text" name="engineMaterial1" id="title">
-          </div>
-          <div class="form-control">
-            <label for="engineMaterial2">Engine Material 2</label>
-            <input type="text" name="engineMaterial2" id="title">
-          </div>
-          <div class="form-control">
-            <label for="horsepower1">Horsepower 1</label>
-            <input type="text" name="horsepower1" id="title">
-          </div>           
-          <div class="form-control">
-            <label for="horsepower2">Horsepower 2</label>
-            <input type="text" name="horsepower2" id="title">
-          </div>
-          <div class="form-control">
-            <label for="torque1">Torque 1</label>
-            <input type="text" name="torque1" id="title">
-          </div>
-          <div class="form-control">
-            <label for="torque2">Torque 2</label>
-            <input type="text" name="torque2" id="title">
-          </div>
-          <div class="form-control">
-            <label for="acc1">Acceleration 1</label>
-            <input type="text" name="acc1" id="title">
-          </div>
-          <div class="form-control">
-            <label for="acc2">Acceleration 2</label>
-            <input type="text" name="acc2" id="title">
-          </div>
-          <div class="form-control">
-            <label for="fuel1">Fuel 1</label>
-            <input type="text" name="fuel1" id="title">
-          </div>
-          <div class="form-control">
-            <label for="fuel2">Fuel 2</label>
-            <input type="text" name="fuel2" id="title">
-          </div>
-          <div class="form-control">
-            <label for="topSpeed1">Top Speed 1</label>
-            <input type="text" name="topSpeed1" id="title">
-          </div>
-          <div class="form-control">
-            <label for="topSpeed2">Top Speed 2</label>
-            <input type="text" name="topSpeed2" id="title">
-          </div>
-          <div class="form-control">
-            <label for="trans1">Transmission 1</label>
-            <input type="text" name="trans1" id="title">
-          </div>
-          <div class="form-control">
-            <label for="trans2">Transmission 2</label>
-            <input type="text" name="trans2" id="title">
-          </div>
-          <div class="form-control">
-            <label for="weight1">Weight 1</label>
-            <input type="text" name="weight1" id="title">
-          </div>
-          <div class="form-control">
-            <label for="weight2">Weight 2</label>
-            <input type="text" name="weight2" id="title">
-          </div>
-          <div class="form-control">
-            <label for="tyres1">Tyres 1</label>
-            <input type="text" name="tyres1" id="title">
-          </div>
-          <div class="form-control">
-            <label for="tyres2">Tyres 2</label>
-            <input type="text" name="tyres2" id="title">
-          </div>
-          <div class="form-control">
-            <label for="drivingAid11">Driving Aids 11</label>
-            <input type="text" name="drivingAid11" id="title">
-          </div>
-          <div class="form-control">
-            <label for="drivingAid11">Driving Aids 12</label>
-            <input type="text" name="drivingAid11" id="title">
-          </div>
-          <div class="form-control">
-            <label for="drivingAid11">Driving Aids 13</label>
-            <input type="text" name="drivingAid11" id="title">
-          </div>
-          <div class="form-control">
-            <label for="drivingAid21">Driving Aids 21</label>
-            <input type="text" name="drivingAid21" id="title">
-          </div>
-          <div class="form-control">
-            <label for="drivingAid11">Driving Aids 22</label>
-            <input type="text" name="drivingAid11" id="title">
-          </div>
-          <div class="form-control">
-            <label for="drivingAid11">Driving Aids 23</label>
-            <input type="text" name="drivingAid11" id="title">
-          </div>
-        
-          <button class="btn" type="submit">Submit Details</button>
+      <div class="product-form">
+        <form action="/add-details/<%= product.id %>" method="post" id="product-form-container">
+          <!-- will be filled from javascript below -->
         </form> 
       </div>
 
       <script>
-        var productForm = document.getElementById('product-form-div');
+        var productForm = document.getElementById('product-form-container');
 
         var elements = [
           {
             item: 'carousel',
+            label: 'Carousel',
             count : 8
           },
-
-        ];
-
+          {
+            item: 'pageHeader',
+            label: 'Page Header',
+            count : 1
+          },
+          {
+            item: 'imageUrl|vehicleHeader|vehicleText',
+            label: 'Image Url|Vehicle Header|Vehicle Text',
+            count : 3
+          },
+          {
+            item: 'bodyStyle|lengthWidthWheelBase|chassisType|chassisMaterial|enginePlacement|Suspension|cargoSpace',
+            label: 'Body Style|Length Width WheelBase|Chassis Type|Chassis Material|Engine Placement|Suspension|Cargo Space',
+            count : 1
+          },
+          {
+            item: 'attribute',
+            label: 'Attribute',
+            count : 2
+          },
+          {
+            item: 'engine',
+            label: 'Engine',
+            count : 2
+          },
+          {
+            item: 'engineMaterial',
+            label: 'Engine Material',
+            count : 2
+          },
+          {
+            item: 'horsepower',
+            label: 'Horsepower',
+            count : 2
+          },
+          {
+            item: 'torque',
+            label: 'Torque',
+            count : 2
+          },
+          {
+            item: 'acc',
+            label: 'Acceleration',
+            count : 2
+          },
+          {
+            item: 'fuel',
+            label: 'Fuel',
+            count : 2
+          },
+          {
+            item: 'topSpeed',
+            label: 'Top Speed',
+            count : 2
+          },
+          {
+            item: 'trans',
+            label: 'Transmission',
+            count : 2
+          },
+          {
+            item: 'weight',
+            label: 'Weight',
+            count : 2
+          },
+          {
+            item: 'tyres',
+            label: 'Tyres',
+            count : 2
+          },
+          {
+            item: 'drivingAid11|drivingAid12|drivingAid13|drivingAid21|drivingAid22|drivingAid23',
+            label: 'Driving Aids 11|Driving Aids 12|Driving Aids 13|Driving Aids 21|Driving Aids 22|Driving Aids 23',
+            count : 1
+          },
+        ]; 
+        
         for(var j = 0; j < elements.length; j++){
           var element = elements[j].item;
+          var elementLabel = elements[j].label;
           var count = elements[j].count;
 
-          for(var i = 0; i < count; i++){
-            var div = document.createElement('div');
-            div.className = 'form-control';
-            var label = document.createElement('label');
-            label.for = element + (parseInt(i)+1);
-            label.innerHTML = element + ' ' + (parseInt(i) + 1);
+          for(var k = 0; k < count; k++){
+            var subElements = element.split('|');
+            var subLabels = elementLabel.split('|'); //should be the same length as subElements
+            for(var i = 0; i < subElements.length; i++){
+              var div = document.createElement('div');
+              div.className = 'form-control';
+              var label = document.createElement('label');
+              label.for = subElements[i] + ((count == 1)? '' : (parseInt(i) + 1)); // if count == 1, do not put the number
+              label.innerHTML = subLabels[i] + ' ' + ((count == 1)? '' : (parseInt(i) + 1)); 
 
-            div.appendChild(label);
+              div.appendChild(label);
 
-            var input = document.createElement('input');
-            input.type = 'text';
-            input.name = element + (parseInt(i)+1);
-            input.id = element + (parseInt(i)+1);
-            div.appendChild(input);
+              var input = document.createElement('input');
+              input.type = 'text';
+              input.name = subElements[i] + ((count == 1)? '' : (parseInt(i) + 1));
+              input.id = subElements[i] + ((count == 1)? '' : (parseInt(i) + 1));
+              div.appendChild(input);
+              productForm.appendChild(div);
+            }
+            
           }
         }
-
-        for(var i = 0; i < 8; i++){
-          var div = document.createElement('div');
-          div.className = 'form-control';
-          var label = document.createElement('label');
-          label.for = 'carousel' + (parseInt(i)+1);
-          label.innerHTML = 'Carousel ' + (parseInt(i) + 1);
-
-          div.appendChild(label);
-
-          var input = document.createElement('input');
-          input.type = 'text';
-          input.name = 'carousel' + (parseInt(i)+1);
-          input.id = 'carousel' + (parseInt(i)+1);
-          div.appendChild(input);
-        }
+        var button = document.createElement('input');
+        button.className = 'btn';
+        button.type = 'submit';
+        button.value = 'Submit Details';
+        productForm.appendChild(button);
       </script>
   </main>
 <%- include('../includes/end.ejs') %>

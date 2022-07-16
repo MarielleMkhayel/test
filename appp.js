@@ -22,5 +22,6 @@ app.use(pickCarRoutes);
 
 app.use(errorControllers.getError);
 
+console.log('server listening on port 4000');
 app.listen(4000);
 
