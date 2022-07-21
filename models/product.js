@@ -26,7 +26,6 @@ module.exports= class Product {
     }
 
     static addDetails(id, details, cb){
-        this.details = details;
         readingProds( products => { //since readingProds byekhod one argument w ana hon 3m 3ayetla, and plus since im aware that cb is a fct, then all of this fct btw () is the cb.
             var product = products.find(p => p.id === id);
             product.details = details;
@@ -37,24 +36,14 @@ module.exports= class Product {
         });
     }
 
-    static updateDetails(updatedDetails, cb){
-        // this.updatedDetails = details;
-        // readingProds( products => { 
-        //     var product = products.find(p => p.id === id);
-        //     product.details = updatedDetails;
-        //     fs.writeFile(p, JSON.stringify(updatedDetails), err => { //im converting from array to json
-        //         console.log(err);
-        //     });
-        //     cb(product);
-        // });
-        readingProds(products => {
-            this.details = updatedDetails;
-            const existingProductIndex = products.findIndex(prod => prod.id === this.id);
-            const updatedProducts = [...products];
-            updatedProducts[existingProductIndex]= this;
-            fs.writeFile(p, JSON.stringify(updatedProducts), err => { //im converting from array to json
+    static updateDetails(id, updatedDetails, cb){
+        readingProds( products => { 
+            var product = products.find(p => p.id === id);
+            product.updatedDetails = updatedDetails;
+            fs.writeFile(p, JSON.stringify(updatedDetails), err => { //im converting from array to json
                 console.log(err);
             });
+            cb(product);
         });
     }
 
