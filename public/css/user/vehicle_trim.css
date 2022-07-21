@@ -7,7 +7,7 @@
 
 .nav-link__pagenav:link{
   color: dimgray;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   text-decoration: none;
   padding-left: 20px;
   padding-top: 50px;
@@ -16,13 +16,13 @@
 
 .nav-link__pagenav:visited, .nav-link__pagenav:active{
   color: dimgray;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
 .nav-link__pagenav:hover{
   color: dimgray;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-decoration: none;
 }
@@ -45,7 +45,7 @@
 }
 
 .trim__header{
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   margin-left: 15px;
   color: black;
 }
@@ -105,19 +105,19 @@
 
 .trim__name{
   color:  dimgray  ;
-  font-family:  Ubuntu;
+  font-family:  Ubuntu, Arial, Helvetica, sans-serif;
   padding-top:  30px;
 }
 
 .trim__description{
-  font-family:  Ubuntu;
+  font-family:  Ubuntu, Arial, Helvetica, sans-serif;
   color:  black;
   font-size:  21.5px;
   /*font-style:   italic*/  ;
 }
 
 .trim__specs{
-  font-family:  Ubuntu;
+  font-family:  Ubuntu, Arial, Helvetica, sans-serif;
   color:  black;
   font-size:  14px;
   text-align: left;

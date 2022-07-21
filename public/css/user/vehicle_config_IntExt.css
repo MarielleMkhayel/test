@@ -7,7 +7,7 @@
 
 .nav-link__pagenav:link{
   color: dimgray;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   text-decoration: none;
   padding-left: 20px;
   padding-top: 50px;
@@ -16,13 +16,13 @@
 
 .nav-link__pagenav:visited, .nav-link__pagenav:active{
   color: dimgray;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
 .nav-link__pagenav:hover{
   color: dimgray;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-decoration: none;
 }
@@ -57,8 +57,12 @@
   position: absolute;
   top: 24px;
   left: 16px;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   color: black;
+}
+
+#dynamicPrice_white{
+  color: white;
 }
 
 .config__options-div{
@@ -87,13 +91,13 @@
 
 .config__option-link:link, .config__option-link:visited, .config__option-link:active{
   text-decoration:  none;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   color: black;
 }
 
 .config__option-link:hover{
   text-decoration:  none;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   color: grey;
   font-weight:  bold;
   text-decoration:  none ;

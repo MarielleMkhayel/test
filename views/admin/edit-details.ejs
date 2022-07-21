@@ -8,7 +8,7 @@
     <%- include('../includes/nav.ejs') %>
 
     <main>
-        <form class="product-form" action="<% if (editing) {%> /edit-details <% } else {%> /add-details <% } %>" method="POST">
+        <form class="product-form" action="<% if (editing) {%> /edit-details <% } else {%> /add-details/<%= product.id %> <% } %>" method="POST">
 
             <div class="form-control">
                 <label for="carousel1">Carousel 1</label>

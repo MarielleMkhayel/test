@@ -1,0 +1,24 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="../../public/css/user/mainn.css">
+
+</head>
+
+<body>  
+<%- include('../includes/nav.ejs') %>
+<br>
+<h2 class="config__header">CHOOSE YOUR DREAM VEHICLE</h2>
+<br>
+<div class="config__gridContainer">
+    <% for (let product of prods) { %>
+	<a href="/trim/<%= product.id%> " class="config__vehicleCase">
+	<div class="config__vehicle">
+		<img src="<%= product.confImg %>" class="config__vehicleImage">
+		<br>
+		<h2 class="config__vehicleName"><%= product.title %></h2>
+		<p class="config__vehicleDescription"><i>Starting MSRP<strong> $<%= product.price %></strong></i></p>
+		</div>
+	</a>
+<% } %>
+</div>
+
+<%- include('../includes/end.ejs') %>

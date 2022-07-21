@@ -17,7 +17,7 @@ const readingInfo= cb => {
 };
 
 module.exports= class Trim {
-    constructor (trimImg1, trimName1,trimDescription1, stand1, stand2, stand3, trimPrice1, engineDisplacement1, horsePower1, transmission1, accel1, fuelCons1, trimImg2, trimName2,trimDescription2, stand4, stand5, stand6, trimPrice2, engineDisplacement2, horsePower2, transmission2, accel2, fuelCons2, bodyStyle, lengthWidthWheelBase, chassisType, chassisMaterial, suspension, attribute1, attribute2, engine1, engine2, engineMaterial1, engineMaterial2, torque1, torque2, topSpeed1, topSpeed2, weight1, weight2, tyres1, tyres2, drivingAid11, drivingAid12, drivingAid13, drivingAid21, drivingAid22, drivingAid23  ) {
+    constructor (trimImg1, trimName1,trimDescription1, stand1, stand2, stand3, trimPrice1, engineDisplacement1, horsePower1, transmission1, accel1, fuelCons1, trimImg2, trimName2,trimDescription2, stand4, stand5, stand6, trimPrice2, engineDisplacement2, horsePower2, transmission2, accel2, fuelCons2) {
         this.trimImg1= trimImg1,
         this.trimName1= trimName1,
         this.trimDescription1= trimDescription1;
@@ -41,52 +41,8 @@ module.exports= class Trim {
         this.horsePower2= horsePower2,
         this.transmission2= transmission2, 
         this.accel2= accel2, 
-        this.fuelCons2= fuelCons2,
-        this.bodyStyle= bodyStyle, 
-        this.lengthWidthWheelBase= lengthWidthWheelBase, 
-        this.chassisType= chassisType, 
-        this.chassisMaterial= chassisMaterial,  
-        this.suspension= suspension, 
-        this.attribute1= attribute1, 
-        this.attribute2= attribute2, 
-        this.engine1= engine1, 
-        this.engine2= engine2, 
-        this.engineMaterial1= engineMaterial1, 
-        this.engineMaterial2= engineMaterial2, 
-        this.torque1= torque1, 
-        this.torque2= torque2, 
-        this.topSpeed1= topSpeed1, 
-        this.topSpeed2= topSpeed2,  
-        this.weight1= weight1, 
-        this.weight2= weight2, 
-        this.tyres1= tyres1, 
-        this.tyres2= tyres2, 
-        this.drivingAid11= drivingAid11,
-        this.drivingAid12= drivingAid12, 
-        this.drivingAid13= drivingAid13, 
-        this.drivingAid21= drivingAid21, 
-        this.drivingAid22= drivingAid22, 
-        this.drivingAid23= drivingAid23
+        this.fuelCons2= fuelCons2
         }
-
-    save(){
-        readingInfo( info => { 
-            info.push(this); 
-            fs.writeFile(p, JSON.stringify(info), err => { 
-                //console.log(err);
-            });
-        });
-    }
-    static fetchAll(cb){
-        readingInfo(cb); 
-    }
-    static findById (id, cb) {
-        readingInfo(info => { 
-            const prod= info.find(p => p.id === id); 
-            cb(prod); 
-        
-        });
-    }
 };
 
 

@@ -16,8 +16,7 @@ const readingProds= cb => {
 }; 
 
 module.exports= class Details {
-    constructor (id, carousel1, carousel2, carousel3, carousel4, carousel5, carousel6, carousel7, carousel8, pageHeader, imageUrl1, vehicleHeader1, vehicleText1, imageUrl2, vehicleHeader2, vehicleText2, imageUrl3, vehicleHeader3, vehicleText3, bodyStyle, lengthWidthWheelBase, chassisType, chassisMaterial, enginePlacement, suspension, cargoSpace, attribute1, attribute2, engine1, engine2, engineMaterial1, engineMaterial2, horsePower1, horsePower2, torque1, torque2, accel1, accel2, fuelCons1, fuelCons2, topSpeed1, topSpeed2, transmission1, transmission2, weight1, weight2, tyres1, tyres2, drivingAid11, drivingAid12, drivingAid13, drivingAid21, drivingAid22, drivingAid23) {
-        this.id=id;
+    constructor (carousel1, carousel2, carousel3, carousel4, carousel5, carousel6, carousel7, carousel8, pageHeader, imageUrl1, vehicleHeader1, vehicleText1, imageUrl2, vehicleHeader2, vehicleText2, imageUrl3, vehicleHeader3, vehicleText3, bodyStyle, lengthWidthWheelBase, chassisType, chassisMaterial, enginePlacement, suspension, cargoSpace, attribute1, attribute2, engine1, engine2, engineMaterial1, engineMaterial2, horsePower1, horsePower2, torque1, torque2, accel1, accel2, fuelCons1, fuelCons2, topSpeed1, topSpeed2, transmission1, transmission2, weight1, weight2, tyres1, tyres2, drivingAid11, drivingAid12, drivingAid13, drivingAid21, drivingAid22, drivingAid23) {
         this.carousel1= carousel1,
         this.carousel2= carousel2,
         this.carousel3= carousel3, 
@@ -73,36 +72,6 @@ module.exports= class Details {
         this.drivingAid23= drivingAid23
              }
 
-    save(){
-    readingProds( products => {
-    if (this.id) {
-        const existingProductIndex = products.findIndex(prod => prod.id === this.id);
-        const updatedProducts = [...products];
-        updatedProducts[existingProductIndex]= this;
-        fs.writeFile(p, JSON.stringify(updatedProducts), err => { //im converting from array to json
-            console.log(err);
-        });
-    }
-    else {
-        this.id= Math.random().toString(); //! this is not efficient, check this https://stackoverflow.com/questions/23327010/how-to-generate-unique-id-with-node-js
-            //since readingProds byekhod one argument w ana hon 3m 3ayetla, and plus since im aware that cb is a fct, then all of this fct btw () is the cb.
-        products.push(this); //this here refers to the class object Product, that's why we should use an arrow fct
-        fs.writeFile(p, JSON.stringify(products), err => { //im converting from array to json
-            console.log(err);
-        });
-    }
-    });
-    }
-    static fetchAll(cb){
-        readingProds(cb); 
-    }
-    static findById (id, cb) {
-        readingProds(products => { //bde zid 3a he l fct b shi tari2a eno the product with this specific id, i wanna add the info to it. it will be an object inside the array of products.json. i also want to make the info appear since it's always giving me an empty object.
-            const product= products.find(p => p.id === id); 
-            cb(product); 
-        
-        });
-    }
 };
 
 

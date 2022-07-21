@@ -25,10 +25,8 @@
                             <form action="/add-details/<%= product.id %>" > <!-- shaghlto yehke ma3 controller, shghlto yshtghl ma3 data by7mlon ma3o, eza ken get shghlto to retrieve data-->
                                 <button type="submit" class="btn">Add Details</button>
                             </form>
-                            <form action="/edit-details/<%= product.id %>?edit=true" > <!-- shaghlto yehke ma3 controller, shghlto yshtghl ma3 data by7mlon ma3o, eza ken get shghlto to retrieve data-->
-                                <button type="submit" class="btn">Edit Details</button>
-                            </form>
-                            <a href="/edit-car/<%= product.id %>?edit=true"  class="btn">Edit Vehicle</a> <!--used bas lal get requests w shghleta bas eno tekhedne 3a aanother route, ma 3nda data t7mla -->
+                            <a href="/edit-details/<%= product.id %>"  class="btn">Edit Details</a>
+                            <a href="/edit-car/<%= product.id %>"  class="btn">Edit Vehicle</a> <!--used bas lal get requests w shghleta bas eno tekhedne 3a aanother route, ma 3nda data t7mla -->
                             <form action="/delete-car" method="POST">
                                 <button type="submit" class="btn">Delete Vehicle</button>
                                 <input type="hidden" value="<%= product.id %>" name="productId" >

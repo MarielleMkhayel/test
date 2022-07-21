@@ -20,7 +20,7 @@
 
 .nav-link__pagenav:link{
   color: dimgray;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   text-decoration: none;
   padding-left: 20px;
   padding-top: 50px;
@@ -29,13 +29,13 @@
 
 .nav-link__pagenav:visited, .nav-link__pagenav:active{
   color: dimgray;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
 .nav-link__pagenav:hover{
   color: dimgray;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-decoration: none;
 }
@@ -86,7 +86,7 @@ with the page readjusting itself accordingly.
 
 .options__optionCase:hover{
   text-decoration:  none;
-  color:  dimgray;
+  color:  lightgray;
   font-weight:  bold;
   text-decoration:  none;
 }
@@ -99,14 +99,14 @@ with the page readjusting itself accordingly.
 }
 
 .options__optionName{
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   margin-top: 15px;
   color: dimgray;
   font-weight: bold;
 }
 
 .options__optionDescription{
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   margin-top: 15px;
   color: black;
   padding-left:   20px;
@@ -161,9 +161,6 @@ with the page readjusting itself accordingly.
   padding-left: 660px;
   padding-right: 660px;
 }
-
-
-
 
 
 

@@ -16,12 +16,13 @@ const readingProds= cb => { //cb is a fct passed as an argument, that's why we c
 };
  
 module.exports= class Product {
-    constructor(id, t, iUrl, desc, pr){
+    constructor(id, t, iUrl, desc, pr, conf){
         this.id = id;
         this.title = t;
         this.imageUrl= iUrl;
         this.description= desc;
         this.price= pr;
+        this.confImg= conf
     }
 
     static addDetails(id, details, cb){
@@ -33,6 +34,27 @@ module.exports= class Product {
                 console.log(err);
             });
             cb(product);
+        });
+    }
+
+    static updateDetails(updatedDetails, cb){
+        // this.updatedDetails = details;
+        // readingProds( products => { 
+        //     var product = products.find(p => p.id === id);
+        //     product.details = updatedDetails;
+        //     fs.writeFile(p, JSON.stringify(updatedDetails), err => { //im converting from array to json
+        //         console.log(err);
+        //     });
+        //     cb(product);
+        // });
+        readingProds(products => {
+            this.details = updatedDetails;
+            const existingProductIndex = products.findIndex(prod => prod.id === this.id);
+            const updatedProducts = [...products];
+            updatedProducts[existingProductIndex]= this;
+            fs.writeFile(p, JSON.stringify(updatedProducts), err => { //im converting from array to json
+                console.log(err);
+            });
         });
     }
 

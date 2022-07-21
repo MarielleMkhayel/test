@@ -22,7 +22,7 @@
 
 .nav-link__pagenav:link{
   color: dimgray;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   text-decoration: none;
   padding-left: 20px;
   padding-top: 50px;
@@ -31,13 +31,13 @@
 
 .nav-link__pagenav:visited, .nav-link__pagenav:active{
   color: dimgray;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
 .nav-link__pagenav:hover{
   color: dimgray;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-decoration: none;
 }
@@ -49,7 +49,7 @@
 }
 
 .index__welcomeImageDiv{
-  background-image: url("https://scontent.fbey15-1.fna.fbcdn.net/v/t39.30808-6/286878667_5164357530317926_5845503418273784093_n.jpg?stp=dst-jpg_p960x960&_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=T2oyIze1hbcAX9bFXAh&_nc_ht=scontent.fbey15-1.fna&oh=00_AT_qgj1twNUvtktxi2_J7dV6OrJkWOesWDF5TCf5DXcurw&oe=62C77EBC");
+  background-image: url("https://scontent.fbey15-1.fna.fbcdn.net/v/t39.30808-6/286878667_5164357530317926_5845503418273784093_n.jpg?stp=dst-jpg_p960x960&_nc_cat=101&ccb=1-7&_nc_sid=730e14&_nc_ohc=HwJh1TpX4-kAX8ORATG&_nc_ht=scontent.fbey15-1.fna&oh=00_AT-Gr4uzAo9C43PRfw6soT2AMOy3g_GGZqv-25q9zcXw2w&oe=62DF39BC");
   background-size: cover;
   background-repeat: no-repeat;
   width: 1519px;
@@ -67,7 +67,7 @@
   width: 350px !important;
   text-align: center !important;
   font-size: 30px !important;
-  font-family: Ubuntu !important;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif !important;
   /* outline-style: solid !important; */
   outline-width: 3px !important;
   outline-color: white !important;
@@ -92,7 +92,7 @@
   text-align: center !important;
   font-weight: bold !important;
   font-size: 30px !important;
-  font-family: Ubuntu !important;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif !important;
   /* outline-style: solid !important; */
   box-shadow: 1px 1px 1px 1px #fff inset !important;
   outline-width: 3px !important;
@@ -116,7 +116,7 @@
 }
 
 .index__welcomeText{
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   color: dimgray;
   font-weight: bolder;
 }
@@ -126,7 +126,7 @@
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   color: black ;
 }
 
@@ -139,7 +139,7 @@
 
 .index__copyrightText{
   font-size: 12px;
-  font-family: Ubuntu;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
   margin: auto auto auto auto;
 
 }

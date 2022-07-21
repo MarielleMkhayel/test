@@ -15,7 +15,8 @@ router.post('/add-details/:productId', carsController.postAddDetails);
 router.post('/delete-car', carsController.postDeleteCar);
 router.get('/edit-details/:productId', carsController.getEditDetails); //hk bkhla2 route
 router.post('/edit-details', carsController.postEditDetails);
-
+router.get('/add-trim/:productId', carsController.getAddTrim);
+router.post('/add-trim/:productId', carsController.postAddTrim);
 
 module.exports = router;
 
