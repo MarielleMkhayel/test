@@ -1,0 +1,60 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="../../public/css/user/vehicle_trim.css">
+
+</head>
+
+<body>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<hr>
+<%- include('../includes/nav.ejs') %>
+<br>
+<hr>
+<h2 class="trim__header">SELECT A TRIM LEVEL</h2>
+<br>
+<!-- Product information snippets -->
+<div class="trim__flexBox">
+  <a href="" class="trim__infoBox-right">
+    <img src="<%= trimImg1 %>" class="trim__image">
+    <h1 class="trim__name"> <%= trimName1 %> </h1>
+    <hr> 
+    <br>  
+    <p class="trim__description"><%= trimDescription1 %>
+      <div class="trim__standard">
+        <ul class="ul-center">
+        <li class="li-center"> <%= stand1 %> </li>
+        <li class="li-center"> <%= stand2 %>  </li>
+        <li class="li-center"> <%= stand3 %>  </li>
+        </ul>
+      </div>
+    </p>
+    <p class="trim__specs">
+    <br>
+    <i><strong>Starting MSRP </strong>$<%= trimPrice1 %></i><br>
+    <strong><i>Performance </strong><%= engineDisplacement1 %>L engine, <%= transmission1%> transmission, <%= accel1%>s (0-60 mph), <%= fuelCons1 %>L/100km fuel consumption</i><br>
+    </p> 
+  </a>
+  <a href="" class="trim__infoBox-right">
+    <img src="<%= trimImg2 %>" class="trim__image">
+    <h1 class="trim__name"> <%= trimName2 %> </h1>
+    <hr> 
+    <br>  
+    <p class="trim__description"><%= trimDescription2 %>
+      <div class="trim__standard">
+        <ul class="ul-center">
+        <li class="li-center"> <%= stand4 %> </li>
+        <li class="li-center"> <%= stand5 %>  </li>
+        <li class="li-center"> <%= stand6 %>  </li>
+        </ul>
+      </div>
+    </p>
+    <p class="trim__specs">
+    <br>
+    <i><strong>Starting MSRP </strong>$<%= trimPrice2 %></i><br>
+    <strong><i>Performance </strong><%= engineDisplacement2 %>L engine, <%= transmission2%> transmission, <%= accel2%>s (0-60 mph), <%= fuelCons2 %>L/100km fuel consumption</i><br>
+    </p> 
+  </a>
+  <a href="/adminCars %>" class="vehicle__infoBox-configLink"> 
+    Return to Admin Cars
+  </a>
+ </div>
+<%- include('../includes/end.ejs') %>

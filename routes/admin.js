@@ -17,6 +17,7 @@ router.get('/edit-details/:productId', carsController.getEditDetails); //hk bkhl
 router.post('/edit-details', carsController.postEditDetails);
 router.get('/add-trim/:productId', carsController.getAddTrim);
 router.post('/add-trim/:productId', carsController.postAddTrim);
+router.get('/admin-trim/:productId', carsController.getAdminTrim);
 
 module.exports = router;
 

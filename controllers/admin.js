@@ -1,4 +1,5 @@
 const Product = require('../models/product');
+const Trim = require('../models/trimConf');
 const Details = require('../models/AddDetails');
 
 exports.getAddCar = (req, res, next) => {
@@ -352,3 +353,70 @@ exports.postAddTrim = (req, res, next) => {
   });
   
 };
+
+exports.getAdminTrim = (req,res,next) => {
+  const prodId= req.params.productId;
+  Product.findById(prodId, product => {
+    if (!product) {
+      return res.redirect('/home');
+    };
+    console.log("gi");
+     res.render('admin/admin-trim', {
+      pageTitle: "Trim Levels",
+      product: product,
+      carousel1: product.details.carousel1,
+      carousel2: product.details.carousel2,
+      carousel3: product.details.carousel3,
+      carousel4: product.details.carousel4,
+      carousel5: product.details.carousel5,
+      carousel6: product.details.carousel6,
+      carousel7: product.details.carousel7,
+      carousel8: product.details.carousel8,
+      pageHeader: product.details.pageHeader,
+      imageUrl1: product.details.imageUrl1,
+      vehicleHeader1: product.details.vehicleHeader1,
+      vehicleText1: product.details.vehicleText1,
+      imageUrl2: product.details.imageUrl2,
+      vehicleHeader2: product.details.vehicleHeader2,
+      vehicleText2: product.details.vehicleText2,
+      imageUrl3: product.details.imageUrl3,
+      vehicleHeader3: product.details.vehicleHeader3,
+      vehicleText3: product.details.vehicleText3,
+      bodyStyle: product.details.bodyStyle,
+      lengthWidthWheelBase: product.details.lengthWidthWheelBase,
+      chassisType: product.details.chassisType,
+      chassisMaterial: product.details.chassisMaterial,
+      enginePlacement: product.details.enginePlacement,
+      suspension: product.details.suspension,
+      cargoSpace: product.details.cargoSpace,
+      attribute1: product.details.attribute1,
+      attribute2: product.details.attribute2,
+      engine1: product.details.engine1,
+      engine2: product.details.engine2,
+      engineMaterial1: product.details.engineMaterial1,
+      engineMaterial2: product.details.engineMaterial2,
+      horsePower1: product.details.horsePower1,
+      horsePower2: product.details.horsePower2,
+      torque1: product.details.torque1,
+      torque2: product.details.torque2,
+      accel1: product.details.accel1,
+      accel2: product.details.accel2,
+      fuelCons1: product.details.fuelCons1,
+      fuelCons2: product.details.fuelCons2,
+      topSpeed1: product.details.topSpeed1,
+      topSpeed2: product.details.topSpeed2,
+      transmission1: product.details.transmission1,
+      transmission2: product.details.transmission2,
+      weight1: product.details.weight1,
+      weight2: product.details.weight2,
+      tyres1: product.details.tyres1,
+      tyres2: product.details.tyres2,
+      drivingAid11: product.details.drivingAid11,
+      drivingAid12: product.details.drivingAid12,
+      drivingAid13: product.details.drivingAid13,
+      drivingAid21: product.details.drivingAid21,
+      drivingAid22: product.details.drivingAid22,
+      drivingAid23: product.details.drivingAid23
+      });
+    });
+  };

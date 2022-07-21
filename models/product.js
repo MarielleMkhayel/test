@@ -36,6 +36,17 @@ module.exports= class Product {
         });
     }
 
+    static addTrim(id, trim, cb){
+        readingProds( products => { //since readingProds byekhod one argument w ana hon 3m 3ayetla, and plus since im aware that cb is a fct, then all of this fct btw () is the cb.
+            var product = products.find(p => p.id === id);
+            product.trim = trim;
+            fs.writeFile(p, JSON.stringify(products), err => { //im converting from array to json
+                console.log(err);
+            });
+            cb(product);
+        });
+    }
+
     static updateDetails(id, updatedDetails, cb){
         readingProds( products => { 
             var product = products.find(p => p.id === id);
