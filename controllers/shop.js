@@ -33,7 +33,7 @@ exports.getTrim= (req, res, next) => {
     res.render('shop/trim', {
       pageTitle: "Select Trim",
       product: product,
-      trimImg1: product.trimImg1,
+      trimImg1: product.trimImg1, 
       trimName1: product.trimName1,
       trimDescription1: product.trimDescription1,
       stand1: product.stand1,
