@@ -16,7 +16,6 @@ exports.getPickCar = (req,res,next) => {
   };
 
   exports.getTrim= (req, res, next) => {
-    //console.log("hii");
     const prodId= req.params.productId;
     Trim.findById(prodId, product => {
       if (!product) {
@@ -287,7 +286,6 @@ exports.getPickCar = (req,res,next) => {
 
 exports.getDetails = (req,res,next) => {
   const prodId= req.params.productId;
-  //console.log(prodId + " gr");
   Details.findById(prodId, product => {
     if (!product) {
       return res.redirect('/home');

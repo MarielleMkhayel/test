@@ -10,7 +10,7 @@ const carsController = require('../controllers/shop');
 router.get('/home', carsController.getHome); 
 router.get('/about', carsController.getAbout);
 router.get('/cars', carsController.getPickCar);
-router.use('/details/:productId', carsController.getDetails); //colon here means dynamic input into the url in the name of productId
+router.get('/details/:productId', carsController.getDetails); //colon here means dynamic input into the url in the name of productId
 router.get('/trim/:productId', carsController.getTrim);
 router.get('/ext1/:productId', carsController.getExt1);
 router.get('/int1/:productId', carsController.getInt1);

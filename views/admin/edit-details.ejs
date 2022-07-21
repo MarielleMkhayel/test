@@ -1,0 +1,281 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="../../public/css/admin/cars.css">
+    <link rel="stylesheet" href="../../public/css/admin/forms.css">
+
+</head>
+
+<body>
+    <%- include('../includes/nav.ejs') %>
+
+    <main>
+        <form class="product-form" action="<% if (editing) {%> /edit-details <% } else {%> /add-details <% } %>" method="POST">
+
+            <div class="form-control">
+                <label for="carousel1">Carousel 1</label>
+                <input type="text" name="carousel1" id="carousel1" value="<% if (editing) {%><%=product.carousel1%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="carousel2">Carousel 2</label>
+                <input type="text" name="carousel2" id="carousel2" value="<% if (editing) {%><%=product.carousel2%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="carousel3">carousel3</label>
+                <input type="text" name="carousel3" id="carousel3" value="<% if (editing) {%><%=product.carousel3%><% } %>" >
+            </div>
+
+            <div class="form-control">
+                <label for="carousel4">Carousel 4</label>
+                <input type="text" name="carousel4" id="carousel4" value="<% if (editing) {%><%=product.carousel4%><% } %>" >
+            </div>
+
+            <div class="form-control">
+                <label for="carousel5">Carousel 5</label>
+                <input type="text" name="carousel5" id="carousel5" value="<% if (editing) {%><%=product.carousel5%><% } %>" >
+            </div>
+
+            <div class="form-control">
+                <label for="carousel6">Carousel 6</label>
+                <input type="text" name="carousel6" id="carousel6" value="<% if (editing) {%><%=product.carousel6%><% } %>" >
+            </div>
+
+            <div class="form-control">
+                <label for="carousel7">Carousel 7</label>
+                <input type="text" name="carousel7" id="carousel7" value="<% if (editing) {%><%=product.carousel7%><% } %>" >
+            </div>
+
+            <div class="form-control">
+                <label for="carousel8">Carousel 8</label>
+                <input type="text" name="carousel8" id="carousel8" value="<% if (editing) {%><%=product.carousel8%><% } %>" >
+            </div>
+
+            <div class="form-control">
+                <label for="imageUrl1">ImageUrl 1</label>
+                <input type="text" name="imageUrl1" id="imageUrl1" value="<% if (editing) {%><%=product.imageUrl1%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="vehicleHeader1">VehicleHeader 1</label>
+                <input type="text" name="vehicleHeader1" id="vehicleHeader1" value="<% if (editing) {%><%=product.vehicleHeader1%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="vehicleText1">VehicleText 1</label>
+                <input type="text" name="vehicleText1" id="vehicleText1" value="<% if (editing) {%><%=product.vehicleText1%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="imageUrl2">ImageUrl 2</label>
+                <input type="text" name="imageUrl2" id="imageUrl2" value="<% if (editing) {%><%=product.imageUrl2%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="vehicleHeader2">VehicleHeader 2</label>
+                <input type="text" name="vehicleHeader2" id="vehicleHeader2" value="<% if (editing) {%><%=product.vehicleHeader2%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="vehicleText2">VehicleText 2</label>
+                <input type="text" name="vehicleText2" id="vehicleText2" value="<% if (editing) {%><%=product.vehicleText2%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="imageUrl3">ImageUrl 3</label>
+                <input type="text" name="imageUrl3" id="imageUrl3" value="<% if (editing) {%><%=product.imageUrl3%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="vehicleHeader3">VehicleHeader 3</label>
+                <input type="text" name="vehicleHeader3" id="vehicleHeader3" value="<% if (editing) {%><%=product.vehicleHeader3%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="vehicleText3">VehicleText 3</label>
+                <input type="text" name="vehicleText3" id="vehicleText3" value="<% if (editing) {%><%=product.vehicleText3%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="bodyStyle">BodyStyle</label>
+                <input type="text" name="bodyStyle" id="bodyStyle" value="<% if (editing) {%><%=product.bodyStyle%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="lengthWidthWheelBase">Length Width WheelBase</label>
+                <input type="text" name="lengthWidthWheelBase" id="lengthWidthWheelBase" value="<% if (editing) {%><%=product.lengthWidthWheelBase%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="chassisType">chassisType</label>
+                <input type="text" name="chassisType" id="chassisType" value="<% if (editing) {%><%=product.chassisType%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="chassisMaterial">chassisMaterial</label>
+                <input type="text" name="chassisMaterial" id="chassisMaterial" value="<% if (editing) {%><%=product.chassisMaterial%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="enginePlacement">enginePlacement</label>
+                <input type="text" name="enginePlacement" id="enginePlacement" value="<% if (editing) {%><%=product.enginePlacement%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="suspension">suspension</label>
+                <input type="text" name="suspension" id="suspension" value="<% if (editing) {%><%=product.suspension%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="cargoSpace">cargoSpace</label>
+                <input type="text" name="cargoSpace" id="cargoSpace" value="<% if (editing) {%><%=product.cargoSpace%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="attribute1">attribute 1</label>
+                <input type="text" name="attribute1" id="attribute1" value="<% if (editing) {%><%=product.attribute1%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="attribute2">attribute 2</label>
+                <input type="text" name="attribute2" id="attribute2" value="<% if (editing) {%><%=product.attribute2%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="engine1">engine1</label>
+                <input type="text" name="engine1" id="engine1" value="<% if (editing) {%><%=product.engine1%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="engine2">engine2</label>
+                <input type="text" name="engine2" id="engine2" value="<% if (editing) {%><%=product.engine2%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="engineMaterial1">engineMaterial1</label>
+                <input type="text" name="engineMaterial1" id="engineMaterial1" value="<% if (editing) {%><%=product.engineMaterial1%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="engineMaterial2">engineMaterial2</label>
+                <input type="text" name="engineMaterial2" id="engineMaterial2" value="<% if (editing) {%><%=product.engineMaterial2%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="horsePower1">horsePower1</label>
+                <input type="text" name="horsePower1" id="horsePower1" value="<% if (editing) {%><%=product.horsePower1%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="horsePower2">horsePower2</label>
+                <input type="text" name="horsePower2" id="horsePower2" value="<% if (editing) {%><%=product.horsePower2%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="torque1">torque1</label>
+                <input type="text" name="torque1" id="torque1" value="<% if (editing) {%><%=product.torque1%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="torque2">torque2</label>
+                <input type="text" name="torque2" id="torque2" value="<% if (editing) {%><%=product.torque2%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="torque1">accel1</label>
+                <input type="text" name="accel1" id="accel1" value="<% if (editing) {%><%=product.accel1%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="accel2">accel2</label>
+                <input type="text" name="accel2" id="accel2" value="<% if (editing) {%><%=product.accel2%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="fuelCons1">fuelCons1</label>
+                <input type="text" name="fuelCons1" id="fuelCons1" value="<% if (editing) {%><%=product.fuelCons1%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="fuelCons2">fuelCons2</label>
+                <input type="text" name="fuelCons2" id="fuelCons2" value="<% if (editing) {%><%=product.fuelCons2%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="topSpeed1">topSpeed1</label>
+                <input type="text" name="topSpeed1" id="topSpeed1" value="<% if (editing) {%><%=product.topSpeed1%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="topSpeed2">topSpeed2</label>
+                <input type="text" name="topSpeed2" id="topSpeed2" value="<% if (editing) {%><%=product.topSpeed2%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="transmission1">transmission1</label>
+                <input type="text" name="transmission1" id="transmission1" value="<% if (editing) {%><%=product.transmission1%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="transmission2">transmission2</label>
+                <input type="text" name="transmission2" id="transmission2" value="<% if (editing) {%><%=product.transmission2%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="weight1">weight1</label>
+                <input type="text" name="weight1" id="weight1" value="<% if (editing) {%><%=product.weight1%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="weight2">weight2</label>
+                <input type="text" name="weight2" id="weight2" value="<% if (editing) {%><%=product.weight2%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="tyres1">tyres1</label>
+                <input type="text" name="tyres1" id="tyres1" value="<% if (editing) {%><%=product.tyres1%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="tyres2">tyres2</label>
+                <input type="text" name="tyres2" id="tyres2" value="<% if (editing) {%><%=product.tyres2%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="drivingAid11">drivingAid11</label>
+                <input type="text" name="drivingAid11" id="drivingAid11" value="<% if (editing) {%><%=product.drivingAid11%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="drivingAid12">drivingAid12</label>
+                <input type="text" name="drivingAid12" id="drivingAid12" value="<% if (editing) {%><%=product.drivingAid12%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="drivingAid13">drivingAid13</label>
+                <input type="text" name="drivingAid13" id="drivingAid13" value="<% if (editing) {%><%=product.drivingAid13%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="drivingAid21">drivingAid21</label>
+                <input type="text" name="drivingAid21" id="drivingAid21" value="<% if (editing) {%><%=product.drivingAid21%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="drivingAid22">drivingAid22</label>
+                <input type="text" name="drivingAid22" id="drivingAid22" value="<% if (editing) {%><%=product.drivingAid22%><% } %>">
+            </div>
+
+            <div class="form-control">
+                <label for="drivingAid23">drivingAid23</label>
+                <input type="text" name="drivingAid23" id="drivingAid23" value="<% if (editing) {%><%=product.drivingAid23%><% } %>">
+            </div>
+
+            <% if (editing) { %>
+                <input type="hidden" value="<%= product.id %>" name="productId" >
+            <% } %>
+
+            <button class="btn" type="submit"><% if (editing) {%> Update Details <% } else {%> Add Details <% } %></button>
+        </form>
+    </main>
+<%- include('../includes/end.ejs') %>
+

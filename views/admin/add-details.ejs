@@ -8,9 +8,244 @@
     <%- include('../includes/nav.ejs') %>
 
     <main>
+      <form action="/add-details/<%= product.id %>" method="post" class="product-form">
+
+      <div class="product-form">
+        <div class="form-control">
+          <label for="carousel1">Carousel 1</label>
+          <input type="text" name="carousel1" id="carousel1">
+        </div>
+        <div class="form-control">
+          <label for="carousel2">Carousel 2</label>
+          <input type="text" name="carousel2" id="carousel2">
+        </div>
+        <div class="form-control">
+          <label for="carousel3">Carousel 3</label>
+          <input type="text" name="carousel3" id="carousel3">
+        </div>
+        <div class="form-control">
+          <label for="carousel4">Carousel 4</label>
+          <input type="text" name="carousel4" id="carousel4">
+        </div>
+        <div class="form-control">
+          <label for="carousel5">Carousel 5</label>
+          <input type="text" name="carousel5" id="carousel5">
+        </div>
+        <div class="form-control">
+          <label for="carousel6">Carousel 6</label>
+          <input type="text" name="carousel6" id="carousel6">
+        </div>
+        <div class="form-control">
+          <label for="carousel7">Carousel 7</label>
+          <input type="text" name="carousel7" id="carousel7">
+        </div>
+        <div class="form-control">
+          <label for="carousel8">Carousel 8</label>
+          <input type="text" name="carousel8" id="carousel8">
+        </div>
+        <div class="form-control">
+          <label for="pageHeader">Page Header</label>
+          <input type="text" name="pageHeader" id="pageHeader">
+        </div>
+        <div class="form-control">
+          <label for="imageUrl1">Image Url 1</label>
+          <input type="text" name="imageUrl1" id="imageUrl1">
+        </div>
+        <div class="form-control">
+          <label for="vehicleHeader1">Vehicle Header 1</label>
+          <textarea name="vehicleHeader1" id="vehicleHeader1" rows="5"></textarea>
+        </div>           
+        <div class="form-control">
+          <label for="vehicleText1">Vehicle Text 1</label>
+          <textarea name="vehicleText1" id="vehicleText1" rows="5"></textarea>
+        </div>
+        <div class="form-control">
+          <label for="imageUrl2">Image Url 2</label>
+          <input type="text" name="imageUrl2" id="imageUrl2">
+        </div>
+        <div class="form-control">
+          <label for="vehicleHeader2">Vehicle Header 2</label>
+          <input type="text" name="vehicleHeader2" id="vehicleHeader2">
+        </div>
+        <div class="form-control">
+          <label for="vehicleText2">Vehicle Text 2</label>
+          <textarea name="vehicleText2" id="vehicleText2" rows="5"></textarea>
+        </div>
+        <div class="form-control">
+          <label for="imageUrl3">Image Url 3</label>
+          <input type="text" name="imageUrl3" id="imageUrl3">
+        </div>
+        <div class="form-control">
+          <label for="vehicleHeader3">Vehicle Header 3</label>
+          <input type="text" name="vehicleHeader3" id="vehicleHeader3">
+        </div>
+        <div class="form-control">
+          <label for="vehicleText3">Vehicle Text 3</label>
+          <textarea name="vehicleText3" id="vehicleText3" rows="5"></textarea>
+        </div> 
+        <div class="form-control">
+          <label for="bodyStyle">Body Style</label>
+          <input type="text" name="bodyStyle" id="bodyStyle">
+        </div>    
+        <div class="form-control">
+          <label for="lengthWidthWheelBase">Length Width WheelBase</label>
+          <input type="text" name="lengthWidthWheelBase" id="lengthWidthWheelBase">
+        </div> 
+        <div class="form-control">
+          <label for="chassisType">Chassis Type</label>
+          <input type="text" name="chassisType" id="chassisType">
+        </div> 
+        <div class="form-control">
+          <label for="chassisMaterial">Chassis Material</label>
+          <input type="text" name="chassisMaterial" id="chassisMaterial">
+        </div>
+        <div class="form-control">
+          <label for="enginePlacement">Engine Placement</label>
+          <input type="text" name="enginePlacement" id="enginePlacement">
+        </div> 
+        <div class="form-control">
+          <label for="Suspension">Suspension</label>
+          <input type="text" name="Suspension" id="Suspension">
+        </div>
+        <div class="form-control">
+          <label for="cargoSpace">Cargo Space</label>
+          <input type="text" name="cargoSpace" id="cargoSpace">
+        </div>
+        <div class="form-control">
+          <label for="attribute1">Attribute 1</label>
+          <input type="text" name="attribute1" id="attribute1">
+        </div>
+        <div class="form-control">
+          <label for="attribute2">Attribute 2</label>
+          <input type="text" name="attribute2" id="attribute2">
+        </div>
+        <div class="form-control">
+          <label for="engine1">Engine 1</label>
+          <input type="text" name="engine1" id="engine1">
+        </div>
+        <div class="form-control">
+          <label for="engine2">Engine 2</label>
+          <input type="text" name="engine2" id="engine2">
+        </div>
+        <div class="form-control">
+          <label for="engineMaterial1">Engine Material 1</label>
+          <input type="text" name="engineMaterial1" id="engineMaterial1">
+        </div>
+        <div class="form-control">
+          <label for="engineMaterial2">Engine Material 2</label>
+          <input type="text" name="engineMaterial2" id="engineMaterial2">
+        </div>
+        <div class="form-control">
+          <label for="horsepower1">Horsepower 1</label>
+          <input type="text" name="horsepower1" id="horsepower1">
+        </div>           
+        <div class="form-control">
+          <label for="horsepower2">Horsepower 2</label>
+          <input type="text" name="horsepower2" id="horsepower2">
+        </div>
+        <div class="form-control">
+          <label for="torque1">Torque 1</label>
+          <input type="text" name="torque1" id="torque1">
+        </div>
+        <div class="form-control">
+          <label for="torque2">Torque 2</label>
+          <input type="text" name="torque2" id="torque2">
+        </div>
+        <div class="form-control">
+          <label for="accel1">Acceleration 1</label>
+          <input type="text" name="accel1" id="accel1">
+        </div>
+        <div class="form-control">
+          <label for="accel2">Acceleration 2</label>
+          <input type="text" name="accel2" id="accel2">
+        </div>
+        <div class="form-control">
+          <label for="fuelCons1">Fuel Consumption 1</label>
+          <input type="text" name="fuelCons1" id="fuelCons1">
+        </div>
+        <div class="form-control">
+          <label for="fuelCons2">Fuel Consumption 2</label>
+          <input type="text" name="fuelCons2" id="fuelCons2">
+        </div>
+        <div class="form-control">
+          <label for="topSpeed1">Top Speed 1</label>
+          <input type="text" name="topSpeed1" id="topSpeed1">
+        </div>
+        <div class="form-control">
+          <label for="topSpeed2">Top Speed 2</label>
+          <input type="text" name="topSpeed2" id="topSpeed2">
+        </div>
+        <div class="form-control">
+          <label for="transmission1">Transmission 1</label>
+          <input type="text" name="transmission1" id="transmission1">
+        </div>
+        <div class="form-control">
+          <label for="transmission2">Transmission 2</label>
+          <input type="text" name="transmission2" id="transmission2">
+        </div>
+        <div class="form-control">
+          <label for="weight1">Weight 1</label>
+          <input type="text" name="weight1" id="weight1">
+        </div>
+        <div class="form-control">
+          <label for="weight2">Weight 2</label>
+          <input type="text" name="weight2" id="weight2">
+        </div>
+        <div class="form-control">
+          <label for="tyres1">Tyres 1</label>
+          <input type="text" name="tyres1" id="tyres1">
+        </div>
+        <div class="form-control">
+          <label for="tyres2">Tyres 2</label>
+          <input type="text" name="tyres2" id="tyres2">
+        </div>
+        <div class="form-control">
+          <label for="drivingAid11">Driving Aids 11</label>
+          <input type="text" name="drivingAid11" id="drivingAid11">
+        </div>
+        <div class="form-control">
+          <label for="drivingAid11">Driving Aids 12</label>
+          <input type="text" name="drivingAid11" id="drivingAid12">
+        </div>
+        <div class="form-control">
+          <label for="drivingAid11">Driving Aids 13</label>
+          <input type="text" name="drivingAid11" id="drivingAid13">
+        </div>
+        <div class="form-control">
+          <label for="drivingAid21">Driving Aids 21</label>
+          <input type="text" name="drivingAid21" id="drivingAid21">
+        </div>
+        <div class="form-control">
+          <label for="drivingAid11">Driving Aids 22</label>
+          <input type="text" name="drivingAid11" id="drivingAid22">
+        </div>
+        <div class="form-control">
+          <label for="drivingAid11">Driving Aids 23</label>
+          <input type="text" name="drivingAid11" id="drivingAid23">
+        </div>
+      </div>
+      <button class="btn" type="submit">Submit Details</button>  
+    
+    </form>
+  </main>
+<%- include('../includes/end.ejs') %>
+
+
+
+
+<!-- <%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="../../public/css/admin/cars.css">
+    <link rel="stylesheet" href="../../public/css/admin/forms.css">
+    
+</head>
+
+<body>
+    <%- include('../includes/nav.ejs') %>
+
+    <main>
       <div class="product-form">
         <form action="/add-details/<%= product.id %>" method="post" id="product-form-container">
-          <!-- will be filled from javascript below -->
+           will be filled from JS below 
         </form> 
       </div>
 
@@ -135,4 +370,4 @@
       </script>
   </main>
 <%- include('../includes/end.ejs') %>
-
+ -->
